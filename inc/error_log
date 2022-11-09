@@ -1,0 +1,4 @@
+[14-Mar-2022 09:00:13 America/Boise] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home2/xnnckqla/public_html/inc/db.inc.php on line 8
+[14-Mar-2022 09:00:48 America/Boise] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home2/xnnckqla/public_html/inc/db.inc.php on line 8
+[14-Mar-2022 09:16:18 America/Boise] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home2/xnnckqla/public_html/inc/db.inc.php on line 8
+[14-Mar-2022 09:20:50 America/Boise] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home2/xnnckqla/public_html/inc/db.inc.php on line 8

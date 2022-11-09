@@ -1,0 +1,613 @@
+/* Tack "sliden" */
+.point {
+    cursor: pointer;
+}
+
+#alert {
+    position: absolute;
+    top: -10000%;
+    width: 80%;
+    height: 10vh;
+    background-color: white;
+    transform: translateY(-200%);
+    border: solid 8px black;
+    transition: transform 2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+}
+
+.loga {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 75%;
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    body {
+        margin: 0;
+    }
+
+    .lookiC {
+        display: none;
+    }
+
+    h2 {
+        color: black;
+        font-size: clamp(2rem, 7vw, 9vh);
+        font-family: 'VT323', monospace;
+        text-align: left;
+        margin-bottom: 1%;
+        margin-top: 2%;
+    }
+
+    main {
+        background-color: rgb(255, 94, 144);
+    }
+
+    .tack {
+        width: 98vw;
+        height: 100vh;
+        min-height: 1520px;
+        background-color: rgb(255, 94, 144);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pc {
+        height: fit-content;
+        display: contents;
+    }
+
+    .tTack1 {
+        font-size: 12vw;
+        font-family: 'VT323', monospace;
+        font-weight: 300;
+        text-shadow: -5px 5px white;
+        margin: 0;
+        height: 10vh;
+        min-height: 120px;
+        display: flex;
+        align-items: center;
+    }
+
+    .tTack2 {
+        font-size: 11vw;
+        font-family: 'VT323', monospace;
+        font-weight: 300;
+        text-shadow: -5px 5px white;
+        margin: 0;
+        height: 10vh;
+        min-height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #tackBox {
+        height: 90vh;
+        min-height: 1400px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .tackText {
+        font-size: 5vw;
+        font-family: 'VT323', monospace;
+        font-weight: 300;
+        width: 86%;
+        background-color: white;
+        border: solid black 7px;
+        padding: 2%;
+        height: fit-content;
+        min-height: 300px;
+    }
+
+    .personlig {
+        font-size: 6vw;
+        font-family: 'VT323', monospace;
+        font-weight: 300;
+        text-shadow: -3px 1px rgb(255 94 144);
+    }
+
+    form {
+        width: 90%;
+        height: 20%;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .tackG {
+        font-size: 7vw;
+        font-family: 'VT323', monospace;
+        font-weight: 300;
+    }
+
+    input[type="text" i] {
+        font-size: 8vw;
+        font-family: 'VT323', monospace;
+        border: solid black 5px;
+    }
+
+    .submitu {
+        font-size: 8vw;
+        font-family: 'VT323', monospace;
+        font-weight: 300;
+        background-color: black;
+        color: white;
+        border: black solid 5px;
+        min-height: 100px;
+    }
+
+    .fOrM {
+        width: 90%;
+        height: 20%;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .duo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .visaL {
+        width: 70%;
+    }
+
+    .kopy {
+        width: 28%;
+        background-color: black;
+        color: white;
+        font-size: 5vw;
+        font-family: 'VT323', monospace;
+        font-weight: 300;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .submitu2 {
+        font-size: 6vw;
+        font-family: 'VT323', monospace;
+        font-weight: 300;
+        background-color: #0fa3b1;
+        color: white;
+        text-shadow: -5px 5px rgb(0, 0, 0);
+        border: black solid 5px;
+        min-height: 100px;
+    }
+
+    .nack_logo1 {
+        height: 20%;
+        min-height: 300px;
+        width: 90%;
+    }
+
+    .nack_logo2 {
+        display: none;
+        height: 20%;
+        min-height: 300px;
+        width: 90%;
+    }
+
+    .link {
+        display: none;
+    }
+}
+@media (max-width: 700px) {
+    .tackText {
+        font-size: 34px;
+        font-family: 'VT323', monospace;
+        font-weight: 300;
+        width: 86%;
+        background-color: white;
+        border: solid black 7px;
+        padding: 2%;
+        height: fit-content;
+        min-height: 300px;
+    }
+
+    .lookiC {
+        display: none;
+    }
+
+    .personlig {
+        font-size: 34px;
+        font-family: 'VT323', monospace;
+        font-weight: 300;
+        text-shadow: -3px 1px rgb(255 94 144);
+    }
+
+}
+
+@media (min-width: 992px) {
+    
+    body {
+        margin: 0;
+        background-color: rgb(255 94 144);
+    }
+    
+    h2 {
+        color: black;
+        font-size: 90px;
+        font-family: 'VT323', monospace;
+        text-align: left;
+        margin-bottom: 1%;
+        margin-top: 2%;
+    }
+
+    main {
+        height: 100vh;
+    }
+
+    .lookiC {
+        display: none;
+    }
+
+    .tack {
+        width: 98vw;
+        height: 100vh;
+        background-color: rgb(255, 94, 144);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .tTack1 {
+        font-size: 120px;
+        font-family: 'VT323', monospace;
+        font-weight: 300;
+        text-shadow: -5px 5px white;
+        margin: 0;
+        margin-top: 5%;
+        min-height: 130px;
+    }
+
+    .tTack2 {
+        font-size: 120px;
+        font-family: 'VT323', monospace;
+        font-weight: 300;
+        text-shadow: -5px 5px white;
+        margin: 0;
+        margin-top: 5%;
+        min-height: 130px;
+    }
+
+    #tackBox {
+        height: 90vh;
+        min-height: 666px;
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .tackText {
+        font-size: 50px;
+        font-family: 'VT323', monospace;
+        font-weight: 300;
+        width: 40%;
+        background-color: white;
+        border: solid black 7px;
+        padding: 2%;
+    }
+
+    .personlig {
+        font-size: 52px;
+        font-family: 'VT323', monospace;
+        font-weight: 300;
+        text-shadow: -3px 1px rgb(255 94 144);
+    }
+
+    .pc {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 85%;
+        align-items: center;
+    }
+
+    form {
+        width: 90%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .tackG {
+        font-size: 50px;
+        font-family: 'VT323', monospace;
+        font-weight: 300;
+    }
+
+    input[type="text" i] {
+        font-size: 50px;
+        font-family: 'VT323', monospace;
+        border: solid black 5px;
+    }
+
+    .submitu {
+        font-size: 50px;
+        font-family: 'VT323', monospace;
+        font-weight: 300;
+        background-color: black;
+        color: white;
+        border: black solid 5px;
+        min-height: 70px;
+    }
+
+    .fOrM {
+        width: 90%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .duo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .visaL {
+        width: 70%;
+    }
+
+    .kopy {
+        width: 28%;
+        background-color: black;
+        color: white;
+        font-size: 30px;
+        font-family: 'VT323', monospace;
+        font-weight: 300;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .submitu2 {
+        font-size: 40px;
+        font-family: 'VT323', monospace;
+        font-weight: 300;
+        background-color: #0fa3b1;
+        color: white;
+        text-shadow: -5px 5px rgb(0 0 0);
+        border: black solid 5px;
+        min-height: 70px;
+    }
+
+    .nack_logo1 {
+        width: 80%;
+    }
+
+    .nack_logo2 {
+        width: 80%;
+        display: none;
+    }
+
+    .link {
+        display: none;
+    }
+}
+
+@media (min-width: 1260px) {
+    
+    body {
+        margin: 0;
+    }
+    
+    h2 {
+        color: black;
+        font-size: 90px;
+        font-family: 'VT323', monospace;
+        text-align: left;
+        margin-bottom: 1%;
+        margin-top: 2%;
+    }
+
+
+    main {
+        height: 100vh;
+        background-color: rgb(255 94 144);;
+    }
+
+    .lookiC {
+        display: flex;
+        width: 45%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    
+    .looki {
+        width: 70px;
+        height: auto;
+    }
+
+    .tack {
+        width: 98vw;
+        height: 98vh;
+        min-height: 750px;
+        background-color: rgb(255, 94, 144);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .tTack1 {
+        font-size: 120px;
+        font-family: 'VT323', monospace;
+        font-weight: 300;
+        text-shadow: -5px 5px white;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        margin-top: 2%;
+        min-height: 120px;
+    }
+
+    .tTack2 {
+        font-size: 120px;
+        font-family: 'VT323', monospace;
+        font-weight: 300;
+        text-shadow: -5px 5px white;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        margin-top: 2%;
+        min-height: 120px;
+    }
+
+    #tackBox {
+        height: 65vh;
+        min-height: 610px;
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .tackText {
+        font-size: 50px;
+        font-family: 'VT323', monospace;
+        font-weight: 300;
+        width: 40%;
+        background-color: white;
+        border: solid black 7px;
+        padding: 2%;
+    }
+
+    .personlig {
+        font-size: 52px;
+        font-family: 'VT323', monospace;
+        font-weight: 300;
+        text-shadow: -3px 1px rgb(255 94 144);
+    }
+
+    .pc {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 85%;
+        align-items: center;
+    }
+
+    form {
+        width: 90%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 45%;
+    }
+
+    .tackG {
+        font-size: 50px;
+        font-family: 'VT323', monospace;
+        font-weight: 300;
+    }
+
+    input[type="text" i] {
+        font-size: 50px;
+        font-family: 'VT323', monospace;
+        border: solid black 5px;
+    }
+
+    .submitu {
+        font-size: 50px;
+        font-family: 'VT323', monospace;
+        font-weight: 300;
+        background-color: black;
+        color: white;
+        border: black solid 5px;
+        min-height: 70px;
+    }
+
+    .fOrM {
+        width: 90%;
+        height: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .duo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .visaL {
+        width: 70%;
+    }
+
+    .kopy {
+        width: 28%;
+        background-color: black;
+        color: white;
+        font-size: 30px;
+        font-family: 'VT323', monospace;
+        font-weight: 300;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .submitu2 {
+        font-size: 40px;
+        font-family: 'VT323', monospace;
+        font-weight: 300;
+        background-color: #0fa3b1;
+        color: white;
+        text-shadow: -5px 5px rgb(0 0 0);
+        border: black solid 5px;
+        min-height: 70px;
+    }
+
+    .nack_logo1 {
+        width: 30%;
+        display: none;
+        bottom: 1%;
+        left: 35%;
+    }
+
+    .nack_logo2 {
+        width: 50%;
+        display: block;
+        margin-top: 2%;
+    }
+
+    .link {
+        display: block;
+        font-family: 'VT323', monospace;
+        color: black;
+        font-size: 40px;
+        min-height: 60px;
+    }
+
+}

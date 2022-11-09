@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^nackcollective\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.nackcollective\.com$
+RewriteRule ^/?$ "https\:\/\/xn\-\-nck\-qla\.com\/" [R=301,L]
+

@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+Options +FollowSymlinks
+RewriteEngine on
+RewriteBase /
+
+# /page/anything -> page.php?url=anything
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^page/([^/]*)$ /page.php?url=$1 [L]
+
+</IfModule>

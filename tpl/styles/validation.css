@@ -1,0 +1,40 @@
+#error-box-pwd {
+    display: none; 
+    position: absolute;
+    background-color: #ffd400;
+    border: solid 5px black;
+    border-radius: 20px;
+    width: 48%;
+    left: 25%;
+    top: 40%;
+    outline: 4px solid #ffd400;
+}
+
+#error-box {
+    display: none;
+    position: absolute;
+    background-color: #ffd400;
+    border: solid 5px black;
+    border-radius: 20px;
+    width: 46%;
+    left: 51%;
+    top: 20%;
+    outline: 4px solid #ffd400;
+}
+
+#error-title {
+    margin: 0;
+    font-size: 3.5em;
+    font-family: monospace;
+    font-weight: bold;
+    text-align: center;
+}
+
+#error {
+    font-family: auto;
+    text-align: left;
+    font-weight: bold;
+    color: #000000;
+    font-size: 1.1em;
+    padding: 4%;
+}

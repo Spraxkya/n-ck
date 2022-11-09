@@ -1,0 +1,1724 @@
+.point {
+    cursor: pointer;
+}
+
+.grey {
+    color: #CCC4C5 !important;
+}
+
+input[type="button" i] {
+    border-radius: 0% !important;
+    appearance: unset;
+    padding: unset;
+}
+
+#streck {
+    position: absolute;
+    width: 5px;
+    left: 50%;
+    margin-left: -2.5px;
+    opacity: 0;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 992px) {
+html {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    height: fit-content;
+}
+
+main {
+    margin: 0;
+    height: 100%;
+    background-color: #181215;
+    display: flex;
+    justify-content: center;
+}
+
+.h1 {
+    font-weight: 300;
+    font-size: clamp(2rem, 15vw, 15vh);
+    font-family: 'VT323', monospace;
+    text-align: center;
+}
+
+.steps {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.prev {
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+.next {
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+.pek {
+    width: auto;
+    height: 15%;
+    position: absolute;
+    bottom: 10%;
+    left: 42%;
+    opacity: 0;
+}
+
+#main-content {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    height: fit-content;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+/* Första "sliden" */
+
+#first {
+    opacity: 1;
+}
+
+.line-1{
+    font-size: clamp(2rem, 15vw, 15vh);
+    font-family: 'VT323', monospace;
+    font-weight: 300;
+    word-break:break-word;
+}
+
+.hidden {
+    opacity:0;
+}
+
+.console-container {
+    font-size: clamp(2rem, 15vw, 15vh);
+    font-family: 'VT323', monospace;
+    text-align:center;
+    display:block;
+    color:white;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+  }
+
+  .console-underscore {
+    display:inline-block;
+    position:relative;
+    top:-0.14em;
+    left:10px;
+    color: transparent;
+    display: none;
+ }
+
+/* Andra "sliden" */
+
+#second {
+    display: none;
+}
+
+/* Tredje "sliden" */
+
+
+#third {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden
+}
+
+.smultron {
+    color: #FF5E90;
+    font-size: clamp(2rem, 15vw, 15vh);
+    font-family: 'VT323', monospace;
+    text-align: center;
+}
+
+/* Fjärde "sliden" */
+
+#fourth {
+    display: none;
+}
+
+/* Femte "sliden" */
+
+#fift {
+    display: none;
+    background-color: #FF5E90;
+    text-shadow: -5px 5px white;
+    z-index: 5;
+}
+
+.h1_black {
+    color: black;
+    font-size: 140px;
+    font-family: 'VT323', monospace;
+    text-align: center;
+}
+
+/* Sjätte "sliden" */
+
+#sixth {
+    background-color: #FF5E90;
+    display: none;
+    flex-direction: column;
+}
+
+.h1_black6 {
+    color: black;
+    font-size: clamp(2rem, 12vw, 12vh);
+    font-family: 'VT323', monospace;
+    text-align: center;
+    margin-bottom: 1%;
+    margin-top: 2%;
+    text-shadow: -5px 5px white;
+}
+
+.h1_black6L {
+    color: black;
+    font-size: clamp(2rem, 9vw, 9vh);
+    font-family: 'VT323', monospace;
+    text-align: left;
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+
+.Z {
+    z-index: 50;
+}
+
+.optionsB {
+    height: 170px;
+    width: 100%;
+    margin: 0 auto;
+    border: solid 8px black;
+    color: black;
+    font-size: clamp(2rem, 9vw, 9vh);
+    font-family: 'VT323', monospace;
+}
+
+/* Kontakt "sliden" */
+
+#contact {
+    display: none;
+    background-color: #FF5E90;
+    flex-direction: column;
+    align-items: center;
+    min-height: 70vh;
+    height: fit-content;
+}
+
+#alert {
+    position: absolute;
+    top: 10%;
+    width: 80%;
+    height: 10vh;
+    background-color: white;
+    transform: translateY(-200%);
+    border: solid 8px black;
+    transition: all 2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+}
+
+#nummerAlert {
+    display: none;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#mailAlert {
+    display: none;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1_blackC {
+    color: black;
+    font-size: 130px;
+    font-family: 'VT323', monospace;
+    text-align: left;
+    margin-bottom: 1%;
+    margin-top: 2%;
+    width: 105%;
+    text-shadow: -5px 5px white;  
+}
+
+.contact-div {
+    width: 75vw;
+    max-width: 800px;
+    min-height: 250px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5%;
+    justify-content: space-between;
+    border: solid 8px black;
+}
+
+.contactA {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.contactB {
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+}
+
+.phone8bit {
+    height: 100px;
+}
+
+h2 {
+    color: black;
+    font-size: 90px;
+    font-family: 'VT323', monospace;
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+
+.mail8bit {
+    height: 90px;
+}
+
+.h2small {
+    color: black;
+    font-size: 70px;
+    font-family: 'VT323', monospace;
+    text-align: left;
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+
+.contact-done {
+    position: absolute;
+    bottom: 4%;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.done {
+    height: 170px;
+    width: 50%;
+    margin: 0 auto;
+    border: solid 8px black;
+    color: black;
+    font-size: 75px;
+    font-family: 'VT323', monospace;
+    max-width: 500px;
+    background-color: white;
+}
+
+.back {
+    margin: 0 auto;
+    color: black;
+    font-size: 40px;
+    font-family: 'VT323', monospace;
+    text-decoration: underline;
+}
+
+/* Boka "sliden" */
+#book {
+    display: none;
+    background-color: #FF5E90;
+    min-width: 98vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.boka {
+    text-shadow: -5px 5px white;
+    margin: 0;
+    height: 7vh;
+    min-height: 140px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.pcBoka {
+    width: 100%;
+    height: 83%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pil {
+    height: 30%;
+}
+
+#weekCalender {
+    height: 45vh;
+    min-height: 775px;
+    width: 60%;
+    max-width: 700px;
+}
+
+#weekChoice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 11.11111111%;
+}
+
+#week1 {
+    display: flex;
+}
+
+#week2 {
+    display: none;
+}
+
+#week3 {
+    display: none;
+}
+
+#week4 {
+    display: none;
+}
+
+.week {
+    justify-content: center;
+    font-size: 70px;
+    margin: 0;
+    font-weight: 300;
+}
+
+.datum {
+    color: black;
+    font-size: 40px;
+    font-family: 'VT323', monospace;
+    text-align: center;
+    margin: 0;
+    font-weight: 300;
+}
+
+#cWeek1 {
+    display: flex;
+}
+
+#cWeek2 {
+    display: none;
+}
+
+#cWeek3 {
+    display: none;
+}
+
+#cWeek4 {
+    display: none;
+}
+
+.cWeek {
+    justify-content: center;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 88.888888888888888888888888888889%;
+}
+
+tbody {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+}
+
+tr {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 100%;
+}
+
+th {
+    width: 20%;
+}
+
+td {
+    height: 50px;
+    background-color: white;
+    text-align: center;
+}
+
+.bookedTime {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+}
+
+.call {
+    background-color: white;
+    width: 95%;
+    height: 14%;
+    display: flex;
+    font-size: clamp(1.6rem, 5vw, 2vh);
+    font-family: 'VT323', monospace;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    border: solid black 2px;
+    min-height: 80px;
+    max-width: 120px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 45vh;
+    min-height: unset;
+    justify-content: space-evenly;
+    width: 40%;
+    position: relative;
+}
+
+label {
+    height: fit-content;
+    padding: 1%;
+    width: 84%;
+    display: flex;
+    align-items: center;
+    font-size: 38px;
+    justify-content: center;
+    font-family: 'VT323', monospace;
+}
+
+input {
+    border: solid black 3px;
+    width: 65%;
+}
+
+input[type="text" i] {
+    padding: 1px 2px;
+    font-size: 30px;
+    font-family: 'VT323', monospace;
+    max-width: 350px;
+}
+
+input[type="number" i] {
+    padding: 1px 2px;
+    font-size: 30px;
+    font-family: 'VT323', monospace;
+    max-width: 350px;
+}
+
+#inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="checkbox" i] {
+    height: 30px;
+    margin-right: 5%;
+    box-shadow: 0px 0px 0px 2px rgb(0 0 0);
+    width: 30px;
+    cursor: pointer;
+    appearance: unset;
+    background-color: white;
+    border: none;
+    border-radius: 0%;
+}
+input[type="checkbox" i]:checked {
+    height: 30px;
+    margin-right: 5%;
+    box-shadow: 0px 0px 0px 2px rgb(0 0 0);
+    width: 30px;
+    cursor: pointer;
+    appearance: auto;
+    background-color: white;
+    border: none;
+    border-radius: 0%;
+}
+
+#checkboxx {
+    display: flex;
+    height: fit-content;
+    width: 75%;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+}
+
+#checkboxText {
+    font-size: 22px;
+    font-family: 'VT323', monospace;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+#yeit {
+    height: 95px;
+    width: 60%;
+    font-family: 'VT323', monospace;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    border: white solid 4px;
+    text-shadow: -4px 3px rgb(255 94 144);
+    max-width: 280px;
+}
+
+#validateText {
+    font-size: 30px;
+    font-family: 'VT323', monospace;
+}
+
+
+#backiluring{
+    display: none;
+    height: 5vh;
+    bottom: 0px;
+    align-items: center;
+    position: absolute;
+}
+
+#backiluring2 {
+    display: block;
+    align-items: center;
+    margin-bottom: 0%;
+    position: absolute;
+    top: 102%;
+}
+
+.bigscreen{
+    font-size: 60px !important;
+}
+
+/* Tack "sliden" */
+
+}
+
+@media only screen and (max-width: 992px) {
+
+html {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    height: fit-content;
+}
+
+main {
+    margin: 0;
+    height: 100%;
+    background-color: #181215;
+    display: flex;
+    justify-content: center;
+}
+
+.h1 {
+    font-weight: 300;
+    font-size: clamp(2rem, 15vw, 15vh);
+    font-family: 'VT323', monospace;
+    text-align: center;
+
+}
+
+.steps {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.prev {
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+.next {
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+.pek {
+    width: auto;
+    height: 15%;
+    position: absolute;
+    bottom: 10%;
+    left: 31%;
+    opacity: 0;
+}
+
+#main-content {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    height: fit-content;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 85%;
+}
+
+/* Första "sliden" */
+
+#first {
+    opacity: 1;
+}
+
+.line-1{
+    font-size: clamp(2rem, 15vw, 15vh);
+    font-family: 'VT323', monospace;
+    font-weight: 300;
+    word-break:break-word;
+}
+
+.hidden {
+    opacity:0;
+}
+
+.console-container {
+    font-size: clamp(2rem, 15vw, 15vh);
+    font-family: 'VT323', monospace;
+    text-align:center;
+    display:block;
+    color:white;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+  }
+
+  .console-underscore {
+    position:relative;
+    top:-0.14em;
+    left:10px;
+    color: transparent;
+    display: none;
+ }
+
+/* Andra "sliden" */
+
+#second {
+    display: none;
+}
+
+/* Tredje "sliden" */
+
+#third {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden
+}
+
+
+
+.smultron {
+    color: #FF5E90;
+    font-size: clamp(2rem, 15vw, 15vh);
+    font-family: 'VT323', monospace;
+    text-align: center;
+}
+
+/* Fjärde "sliden" */
+
+#fourth {
+    display: none;
+}
+
+/* Femte "sliden" */
+
+#fift {
+    display: none;
+    background-color: #FF5E90;
+    text-shadow: -5px 5px white;
+    z-index: 5;
+    width: 100%;
+}
+
+.h1_black {
+    color: black;
+    font-size: clamp(2rem, 12vw, 18vh);
+    font-family: 'VT323', monospace;
+    text-align: center;
+}
+
+/* Sjätte "sliden" */
+
+#sixth {
+    background-color: #FF5E90;
+    display: none;
+    flex-direction: column;
+}
+
+.h1_black6 {
+    color: black;
+    font-size: 11vw;
+    font-family: 'VT323', monospace;
+    text-align: center;
+    margin-bottom: 1%;
+    margin-top: 2%;
+    text-shadow: -5px 5px white;
+}
+
+.h1_black6L {
+    color: black;
+    font-size: clamp(2rem, 9vw, 9vh);
+    font-family: 'VT323', monospace;
+    text-align: left;
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+
+.Z {
+    z-index: 50;
+}
+
+.optionsB {
+    height: 170px;
+    width: 100%;
+    margin: 0 auto;
+    border: solid 8px black;
+    color: black;
+    font-size: clamp(2rem, 9vw, 9vh);
+    font-family: 'VT323', monospace;
+}
+
+/* Kontakt "sliden" */
+
+#contact {
+    display: none;
+    background-color: #FF5E90;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    max-height: 800px;
+    width: 100%;
+}
+
+#alert {
+    position: absolute;
+    top: 10%;
+    width: 80%;
+    height: 10vh;
+    background-color: white;
+    transform: translateY(-200%);
+    border: solid 8px black;
+    transition: all 2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+}
+
+#nummerAlert {
+    display: none;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#mailAlert {
+    display: none;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1_blackC {
+    color: black;
+    font-size: clamp(2rem, 12vw, 12vh);
+    font-family: 'VT323', monospace;
+    text-align: left;
+    margin-bottom: 1%;
+    margin-top: 2%;
+    width: 105%;
+    text-shadow: -5px 5px white;  
+}
+
+.contact-div {
+    width: 80vw;
+    min-height: 180px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5%;
+    justify-content: space-between;
+    border: solid 8px black;
+}
+
+.contactA {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.contactB {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.phone8bit {
+    height: 10vw;
+}
+
+h2 {
+    color: black;
+    font-size: clamp(2rem, 8vw, 9vh);
+    font-family: 'VT323', monospace;
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+
+.mail8bit {
+    height: 9vw;
+}
+
+.h2small {
+    color: black;
+    font-size: clamp(2rem, 7vw, 7vh);
+    font-family: 'VT323', monospace;
+    text-align: left;
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+
+.contact-done {
+    position: absolute;
+    bottom: 4%;
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.done {
+    height: 170px;
+    width: 50%;
+    margin: 0 auto;
+    border: solid 8px black;
+    color: black;
+    font-size: 75px;
+    font-family: 'VT323', monospace;
+    max-width: 500px;
+    background-color: white;
+}
+
+.back {
+    margin: 0 auto;
+    color: black;
+    font-size: clamp(2rem, 6vw, 6vh);
+    font-family: 'VT323', monospace;
+    text-decoration: underline;
+}
+
+/* Boka "sliden" */
+
+
+
+#book {
+    display: none;
+    background-color: #FF5E90;
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.boka {
+    text-shadow: -5px 5px white;
+    margin: 0;
+    height: 7vh;
+    min-height: 140px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.pcBoka {
+    display: none;
+    width: 100%;
+    height: 83%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pil {
+    height: 40px;
+}
+
+#weekCalender {
+    height: 40vh;
+    min-height: 750px;
+}
+
+#weekChoice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 11.11111111%;
+}
+
+#week1 {
+    display: flex;
+}
+
+#week2 {
+    display: none;
+}
+
+#week3 {
+    display: none;
+}
+
+#week4 {
+    display: none;
+}
+
+.week {
+    justify-content: center;
+    font-size: clamp(2rem, 11vw, 15vh);
+    margin: 0;
+    font-weight: 300;
+}
+
+.datum {
+    color: black;
+    font-size: clamp(2rem, 5.5vw, 4vh);
+    font-family: 'VT323', monospace;
+    text-align: center;
+    margin: 0;
+    font-weight: 300;
+}
+
+#cWeek1 {
+    display: flex;
+}
+
+#cWeek2 {
+    display: none;
+}
+
+#cWeek3 {
+    display: none;
+}
+
+#cWeek4 {
+    display: none;
+}
+
+.cWeek {
+    justify-content: center;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 88.888888888888888888888888888889%;
+}
+
+tbody {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+}
+
+tr {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 100%;
+}
+
+th {
+    width: 20%;
+}
+
+td {
+    height: 50px;
+    background-color: white;
+    text-align: center;
+}
+
+.bookedTime {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+}
+
+.call {
+    background-color: white;
+    width: 95%;
+    height: 14%;
+    display: flex;
+    font-size: clamp(1.6rem, 5vw, 2vh);
+    font-family: 'VT323', monospace;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    border: solid black 2px;
+    min-height: 80px;
+}
+
+#kontaktForm {
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 25vh;
+    justify-content: space-between;
+    min-height: 520px;
+}
+
+label {
+    height: fit-content;
+    padding: 1%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    font-size: clamp(2rem, 5.9vw, 4vh);
+    justify-content: space-between;
+    font-family: 'VT323', monospace;
+}
+
+input {
+    height: 100px;
+    border: solid black 3px;
+    width: 75%;
+}
+
+input[type="text" i] {
+    padding: 1px 2px;
+    font-size: clamp(2rem, 7vw, 6vh);
+    font-family: 'VT323', monospace;
+}
+
+input[type="number" i] {
+    padding: 1px 2px;
+    font-size: clamp(2rem, 7vw, 6vh);
+    font-family: 'VT323', monospace;
+}
+
+#inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="checkbox" i] {
+    height: 60px;
+    margin-right: 5%;
+    box-shadow: 0px 0px 0px 4px rgb(0 0 0);
+    width: 60px;
+    cursor: pointer;
+    appearance: unset;
+    background-color: white;
+    border-radius: 0%;
+}
+
+input[type="checkbox" i]:checked {
+    height: 60px;
+    margin-right: 5%;
+    box-shadow: 0px 0px 0px 4px rgb(0 0 0);
+    width: 60px;
+    cursor: pointer;
+    appearance: auto;
+    background-color: white;
+    border-radius: 0%;
+}
+
+#checkboxx {
+    display: flex;
+    height: fit-content;
+    width: 73%;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#checkboxText {
+    font-size: clamp(1rem, 3vw, 3vh);
+    font-family: 'VT323', monospace;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+#yeit {
+    height: 180px;
+    width: 55%;
+    font-family: 'VT323', monospace;
+    font-size: clamp(2rem, 16vw, 15vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    border: white solid 4px;
+    text-shadow: -5px 5px rgb(255 94 144);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    min-width: 500px;
+}
+
+#validateText {
+    font-size: clamp(2rem, 7vw, 6vh);
+    font-family: 'VT323', monospace;
+}
+
+#backiluring {
+    display: flex;
+    height: 5vh;
+    bottom: 0;
+    min-height: 250px;
+    align-items: center;
+}
+#backiluring2{
+    display: none;
+    height: 5vh;
+    bottom: 0;
+    min-height: 180px;
+    align-items: center;
+}
+} 
+
+
+
+@media only screen and (min-width: 1350px) {
+    .bigscreen{
+        font-size: 60px !important;
+    }
+
+    #book {
+        display: none;
+        background-color: #FF5E90;
+        min-width: 90vw;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 45vh;
+        min-height: 500px;
+        width: 490px;
+        border: solid black 2px;
+        box-shadow: -5px 5px black;
+        justify-content: space-evenly;
+        position: relative
+    }
+
+    #yeit {
+        height: 95px;
+        width: 60%;
+        font-family: 'VT323', monospace;
+        font-size: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: black;
+        border: white solid 4px;
+        text-shadow: -4px 3px rgb(255 94 144);
+        max-width: 280px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 1600px) {
+    .bigscreen{
+        font-size: 60px !important;
+    }
+
+    #book {
+        display: none;
+        background-color: #FF5E90;
+        min-width: 80vw;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 45vh;
+        min-height: 500px;
+        width: 490px;
+        border: solid black 2px;
+        box-shadow: -5px 5px black;
+        justify-content: space-evenly;
+        position: relative;
+    }
+
+
+    #yeit {
+        height: 95px;
+        width: 60%;
+        font-family: 'VT323', monospace;
+        font-size: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: black;
+        border: white solid 4px;
+        text-shadow: -4px 3px rgb(255 94 144);
+        max-width: 280px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media only screen and (max-height: 900px) {
+
+    #contact {
+        background-color:rgb(255 94 144);
+        flex-direction: column;
+        align-items: center;
+        min-height: 80vh;
+        height: fit-content;
+        justify-content: space-between;
+    }
+
+    .contact-div {
+        width: 75vw;
+        max-width: 800px;
+        min-height: 180px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5%;
+        justify-content: space-between;
+        border: solid 8px black;
+    }
+
+    .contactA {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+    
+    .contactB {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .contact-done {
+        position: relative;
+        bottom: unset;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+    }
+
+    #book {
+        background-color: #FF5E90;
+        min-width: 90vw;
+        height: fit-content;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 45vh;
+        min-height: 500px;
+        width: 490px;
+        border: solid black 2px;
+        box-shadow: -5px 5px black;
+        justify-content: space-evenly;
+        position: relative;
+    }
+
+    #backiluring2 {
+        display: block;
+        align-items: center;
+        margin-bottom: 0%;
+        position: absolute;
+        top: 102%;
+    }
+
+}
+
+@media only screen and (max-width:1050px) {
+    #ipadVideo {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+
+    #pcVideo {
+        display: none;
+    }
+ 
+    #mobilVideo {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    #ipadVideo {
+        display: none;
+    }
+
+    #pcVideo {
+        display: block;
+    }
+ 
+    #mobilVideo {
+        display: none;
+    }
+}
+
+/* Kalender */
+
+#kalenderC {
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.pil {
+    height: 30%;
+}
+
+#weekChoice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 12%;
+    min-height: 65px;
+}
+
+#week1 {
+    display: flex;
+}
+
+#week2 {
+    display: none;
+}
+
+#week3 {
+    display: none;
+}
+
+#week4 {
+    display: none;
+}
+
+.week {
+    justify-content: center;
+    font-size: 70px;
+    font-family: 'VT323', monospace;
+    margin: 0;
+    font-weight: 300;
+    color: black;
+}
+
+.datum {
+    color: black;
+    font-size: 35px;
+    font-family: 'VT323', monospace;
+    text-align: center;
+    margin: 0;
+    font-weight: 300;
+}
+
+#cWeek1 {
+    display: flex;
+}
+
+#cWeek2 {
+    display: none;
+}
+
+#cWeek3 {
+    display: none;
+}
+
+#cWeek4 {
+    display: none;
+}
+
+.cWeek {
+    justify-content: center;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+tbody {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+}
+
+tr {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 100%;
+}
+
+th {
+    width: 20%;
+}
+
+td {
+    height: 50px;
+    background-color: white;
+    text-align: center;
+}
+
+.bookedTime {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+}
+
+.call {
+    background-color: white;
+    width: 95%;
+    height: 10%;
+    display: flex;
+    font-size: clamp(1.6rem, 5vw, 2vh);
+    font-family: 'VT323', monospace;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    border: solid black 2px;
+    min-height: 50px;
+    max-width: 120px;
+}
+
+.booknC {
+    height: 32%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bookN {
+    height: 80%;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bookNknapp {
+    background-color: white;
+    width: 40%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    font-family: 'VT323', monospace;
+    border: solid black 2px;
+    font-weight: 300;
+    font-size: 1.7vw;
+    justify-content: center;
+}
+
+#formC {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotateX(90deg);
+    transition: transform 2s ease-in-out;
+    background-color: lightskyblue;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: unset;
+    justify-content: space-evenly;
+    position: relative;
+    height: 68%;
+}
+
+label {
+    height: fit-content;
+    padding: 1%;
+    width: 84%;
+    display: flex;
+    align-items: center;
+    font-size: 38px;
+    justify-content: space-between;
+    font-family: 'VT323', monospace;
+}
+
+input {
+    border: solid black 3px;
+    width: 65%;
+}
+
+input[type="text" i] {
+    padding: 1px 2px;
+    font-size: 30px;
+    font-family: 'VT323', monospace;
+    max-width: 350px;
+}
+
+input[type="number" i] {
+    padding: 1px 2px;
+    font-size: 30px;
+    font-family: 'VT323', monospace;
+    max-width: 350px;
+}
+
+#inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="checkbox" i] {
+    height: 30px;
+    margin-right: 5%;
+    box-shadow: 0px 0px 0px 2px rgb(0 0 0);
+    width: 30px;
+    cursor: pointer;
+    appearance: unset;
+    background-color: white;
+    border: none;
+    border-radius: 0%;
+}
+
+input[type="checkbox" i]:checked {
+    height: 30px;
+    margin-right: 5%;
+    box-shadow: 0px 0px 0px 2px rgb(0 0 0);
+    width: 30px;
+    cursor: pointer;
+    appearance: auto;
+    background-color: white;
+    border: none;
+    border-radius: 0%;
+}
+
+#checkboxx {
+    display: flex;
+    height: fit-content;
+    width: 75%;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+#checkboxText {
+    font-size: 22px;
+    font-family: 'VT323', monospace;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+#yeit {
+    height: 95px;
+    width: 60%;
+    font-family: 'VT323', monospace;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    border: white solid 4px;
+    text-shadow: -4px 3px rgb(255 94 144);
+    max-width: 280px;
+}
+
+#validateText {
+    font-size: 30px;
+    font-family: 'VT323', monospace;
+}

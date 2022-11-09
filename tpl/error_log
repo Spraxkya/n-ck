@@ -1,0 +1,4 @@
+[14-Mar-2022 09:50:09 America/Boise] PHP Warning:  include_once(loser.php): failed to open stream: No such file or directory in /home2/xnnckqla/public_html/tpl/paintings.tpl.php on line 71
+[14-Mar-2022 09:50:09 America/Boise] PHP Warning:  include_once(): Failed opening 'loser.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home2/xnnckqla/public_html/tpl/paintings.tpl.php on line 71
+[14-Mar-2022 09:50:15 America/Boise] PHP Warning:  include_once(loser.php): failed to open stream: No such file or directory in /home2/xnnckqla/public_html/tpl/paintings.tpl.php on line 71
+[14-Mar-2022 09:50:15 America/Boise] PHP Warning:  include_once(): Failed opening 'loser.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home2/xnnckqla/public_html/tpl/paintings.tpl.php on line 71
