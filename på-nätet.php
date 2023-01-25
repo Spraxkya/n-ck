@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="sv">
 <head>
     <title>Näck på nätet | Webbyrå </title>
     <meta name="google-site-verification" content="eNBc7Cwi3V09UMFuT71TavlUyDX_eCZ5ThHZb6nb4jQ" />
@@ -31,7 +31,7 @@
         <div id="tab1">
             <div id="left1">
                 <h1> Webbyrå </h1>
-                <img class="datorI" src="./tpl/images/pa-natet/Dator.svg">
+                <img class="datorI" alt="En 8-bitars dator med näck skrivet på skärmen." src="./tpl/images/pa-natet/Dator.svg">
                 <div class="datorC">
                     <span class="datorT fonti"> - Välkommen till Näck på nätet!</span>
                     <span class="datorT fonti"> - Ditt <span class="datorT fonti" style="color: var(--pink);">smultronställe</span> på nätet!</span>
@@ -41,13 +41,13 @@
                 <div class="right1C">
                     <div class="trettretH">
                         <div class="trettretW">
-                            <img class="star" src="./tpl/images/pa-natet/Bla-stjarna.svg">
+                            <img alt="En blå 8-bitars stjärna." class="star" src="./tpl/images/pa-natet/Bla-stjarna.svg">
                         </div>
                         <div class="trettretW" style="flex-direction: column;">
-                            <img class="textS" src="./tpl/images/pa-natet/Sjalvutnamnda-kreativa-stjarnskott.svg">
+                            <img alt="" class="textS" src="./tpl/images/pa-natet/Sjalvutnamnda-kreativa-stjarnskott.svg">
                         </div>
                         <div class="trettretW">
-                            <img class="star" src="./tpl/images/pa-natet/Bla-stjarna.svg">
+                            <img alt="En blå 8-bitars stjärna." class="star" src="./tpl/images/pa-natet/Bla-stjarna.svg">
                         </div>
                     </div>
                     <div class="sjuttisju">
@@ -69,7 +69,7 @@
                         </div>
                         <div class="femti fonti">
                             <div class="starC">
-                            <div class="ikonC"><h3>Vi sätter igång</h3><img class="ikonPil" src="./tpl/images/pa-natet/Svart-pil-hoger.svg"></div>
+                            <div class="ikonC"><h3>Vi sätter igång</h3><img alt="En svart pil som pekar åt höger." class="ikonPil" src="./tpl/images/pa-natet/Svart-pil-hoger.svg"></div>
                                 <p class="p2">
                                     Önskar du en offert? Har du frågor gällande våra tjänster? Eller har du någonting helt annat du vill diskutera?<br><br> Hör av dig redan idag!
                                 </p>    
@@ -78,10 +78,10 @@
                         <div class="femti fonti">
                             <div class="starC">
                                 <h3 style="padding-bottom: 5%;">Kontaktuppgifter</h3>
-                                <div class="ikonC"><img class="ikon" src="./tpl/images/pa-natet/Batman.svg"><p class="p2">Simon Jerfström</p></div>
-                                <div class="ikonC"><img class="ikon" src="./tpl/images/pa-natet/Telefon.svg"><a href="tel:+4672-4034229"><p class="p2 linkW fonti">072-403 42 29</p></a></div>
-                                <div class="ikonC"><img class="ikon" src="./tpl/images/pa-natet/E-post.svg"><a href="mailto:web@nackcollective.com"><p class="p2 linkW fonti">web@nackcollective.com</p></a></div>
-                                <div class="ikonC"><img class="ikon" src="./tpl/images/pa-natet/Kalender.svg"><p onclick="kalenderPc();" class="p2" style="text-decoration:underline;">Boka tid direkt!</p></div>
+                                <div class="ikonC"><img alt="Ett 8-bitars ansikte av en superhjälte." class="ikon" src="./tpl/images/pa-natet/Batman.svg"><p class="p2">Simon Jerfström</p></div>
+                                <div class="ikonC"><img alt="En svart 8-bitars gammeldags telefon." class="ikon" src="./tpl/images/pa-natet/Telefon.svg"><a href="tel:+4672-4034229"><p class="p2 linkW fonti">072-403 42 29</p></a></div>
+                                <div class="ikonC"><img alt="Ett svart 8-bitars brev." class="ikon" src="./tpl/images/pa-natet/E-post.svg"><a href="mailto:web@nackcollective.com"><p class="p2 linkW fonti">web@nackcollective.com</p></a></div>
+                                <div class="ikonC"><img alt="En svart 8-bitars kalender." class="ikon" src="./tpl/images/pa-natet/Kalender.svg"><p onclick="kalenderPc();" class="p2" style="text-decoration:underline;">Boka tid direkt!</p></div>
                             </div>
                         </div>
                     </div>
@@ -96,13 +96,13 @@
                 <div class="right1C">
                     <div class="starTopM">
                         <div class="trettretW">
-                            <img class="star" src="./tpl/images/pa-natet/Bla-stjarna.svg">
+                            <img alt="En blå 8-bitars stjärna." class="star" src="./tpl/images/pa-natet/Bla-stjarna.svg">
                         </div>
                         <div class="trettretW" style="flex-direction: column;">
-                            <img class="textS" src="./tpl/images/pa-natet/Sjalvutnamnda-kreativa-stjarnskott.svg">
+                            <img alt="Ett citat där det står Självutnämnda kreativa stjärnskott." class="textS" src="./tpl/images/pa-natet/Sjalvutnamnda-kreativa-stjarnskott.svg">
                         </div>
                         <div class="trettretW">
-                            <img class="star" src="./tpl/images/pa-natet/Bla-stjarna.svg">
+                            <img alt="En blå 8-bitars stjärna." class="star" src="./tpl/images/pa-natet/Bla-stjarna.svg">
                         </div>
                     </div>
                     <div class="sjuttisju">
@@ -124,9 +124,9 @@
                         </div>
                         <div class="femti fonti">
                             <div class="starC">
-                            <div class="ikonC"><h3>Vi sätter igång</h3><img class="ikonPil hideM" src="./tpl/images/pa-natet/Svart-pil-hoger.svg"></div>
+                            <div class="ikonC"><h3>Vi sätter igång</h3><img alt="En svart pil som pekar åt höger." class="ikonPil hideM" src="./tpl/images/pa-natet/Svart-pil-hoger.svg"></div>
                                 <p class="p2">
-                                    Önskar du en offert? Har du frågor gällande våra tjänster? Eller har du någonting helt annat du vill diskutera?<br><br> Hör av dig redan idag!<img class="ikonPil hidePc spec" src="./tpl/images/pa-natet/Svart-pil-nerat.svg">   
+                                    Önskar du en offert? Har du frågor gällande våra tjänster? Eller har du någonting helt annat du vill diskutera?<br><br> Hör av dig redan idag!<img alt="En svart pil som pekar nedåt." class="ikonPil hidePc spec" src="./tpl/images/pa-natet/Svart-pil-nerat.svg">   
                                 </p> 
                             </div>
                         </div>
@@ -136,10 +136,10 @@
                 <div class="kontaktM hidePc">
                     <div class="kontaktC">
                         <span class="fonti bigT">Kontaktuppgifter</span>
-                        <div class="ikonCm"><img class="ikonM" src="./tpl/images/pa-natet/Batman.svg"><p class="p3 fonti">Simon Jerfström</p></div>
-                        <div class="ikonCm"><img class="ikonM" src="./tpl/images/pa-natet/Telefon.svg"><a href="tel:+4672-4034229"><p style="padding:0;" class="p3 fonti">072-403 42 29</p></a></div>
-                        <div class="ikonCm"><img class="ikonM" src="./tpl/images/pa-natet/E-post.svg"><a href="mailto:web@nackcollective.com"><p style="padding:0;" class="p3 fonti">web@nackcollective.com</p></a></div>
-                        <div class="ikonCm"><img class="ikonM" src="./tpl/images/pa-natet/Kalender.svg"><a href="tpl/kalender.tpl.php" target="blank"><p class="p3 fonti" style="padding:0; text-decoration: underline;">Boka tid direkt!</p></a></div>
+                        <div class="ikonCm"><img alt="Ett 8-bitars ansikte av en superhjälte." class="ikonM" src="./tpl/images/pa-natet/Batman.svg"><p class="p3 fonti">Simon Jerfström</p></div>
+                        <div class="ikonCm"><img alt="En svart 8-bitars gammeldags telefon." class="ikonM" src="./tpl/images/pa-natet/Telefon.svg"><a href="tel:+4672-4034229"><p style="padding:0;" class="p3 fonti">072-403 42 29</p></a></div>
+                        <div class="ikonCm"><img alt="Ett svart 8-bitars brev." class="ikonM" src="./tpl/images/pa-natet/E-post.svg"><a href="mailto:web@nackcollective.com"><p style="padding:0;" class="p3 fonti">web@nackcollective.com</p></a></div>
+                        <div class="ikonCm"><img alt="En svart 8-bitars kalender." class="ikonM" src="./tpl/images/pa-natet/Kalender.svg"><a href="tpl/kalender.tpl.php" target="blank"><p class="p3 fonti" style="padding:0; text-decoration: underline;">Boka tid direkt!</p></a></div>
                     </div>
                 </div>
                 <div class="fillers"></div>
@@ -208,7 +208,7 @@
                </div>
             </div>
             <div id="right22" class="hidePc">
-                <div class="pilC"><img onclick="rubriKlickL();" id="leftP" class="hidePc" src="./tpl/images/pa-natet/Vit-pek-hoger.svg"><span id="font1" class="fonti produktRM hidePc">Webbutveckling</span><span id="font2" class="fonti produktRM hidePc">Digital Strategi</span><span id="font3" class="fonti produktRM hidePc">Marknadsföring</span><img onclick="rubriKlickR();" id="rightP" class="hidePc" src="./tpl/images/pa-natet/Vit-pek-hoger_1.svg"></div>
+                <div class="pilC"><img alt="En vit pil som pekar åt höger." onclick="rubriKlickL();" id="leftP" class="hidePc" src="./tpl/images/pa-natet/Vit-pek-hoger.svg"><span id="font1" class="fonti produktRM hidePc">Webbutveckling</span><span id="font2" class="fonti produktRM hidePc">Digital Strategi</span><span id="font3" class="fonti produktRM hidePc">Marknadsföring</span><img alt="En vit pil som pekar åt höger." onclick="rubriKlickR();" id="rightP" class="hidePc" src="./tpl/images/pa-natet/Vit-pek-hoger_1.svg"></div>
                 <div id="right2C12" class="right2C hidePc">
                     <div class="lol">
                         <p class="fonti p1">
@@ -263,10 +263,10 @@
         <div id="tab3">
             <div class="smulT"><h2 class="fonti">Näck på nätet ...</h2> </div>
             <div class="smulC ">
-                <div class="flip-cardM hidePc"><div id="flipperM" class="flip-card-innerM"><div onclick="cardsM();" class="flip-card-front"><img class="smultronI" src="./tpl/images/pa-natet/Smultron.svg"></div><div class="flip-card-back" onclick="cardsM1();"><span class="cardT fonti" id="cardM"></span></div></div></div>
-                <div class="flip-card hideM"><div class="flip-card-inner"><div onmouseenter="cards1();" class="flip-card-front"><img class="smultronI" src="./tpl/images/pa-natet/Smultron.svg"></div><div class="flip-card-back"><span class="cardT fonti" id="card1"></span></div></div></div>
-                <div class="flip-card hideM"><div class="flip-card-inner"><div onmouseenter="cards2();" class="flip-card-front"><img class="smultronI" src="./tpl/images/pa-natet/Smultron.svg"></div><div class="flip-card-back"><span class="cardT fonti" id="card2"></span></div></div></div>
-                <div class="flip-card hideM"><div class="flip-card-inner"><div onmouseenter="cards3();" class="flip-card-front"><img class="smultronI" src="./tpl/images/pa-natet/Smultron.svg"></div><div class="flip-card-back"><span class="cardT fonti" id="card3"></span></div></div></div>
+                <div class="flip-cardM hidePc"><div id="flipperM" class="flip-card-innerM"><div onclick="cardsM();" class="flip-card-front"><img alt="Ett smultron på baksidan av ett spelkort." class="smultronI" src="./tpl/images/pa-natet/Smultron.svg"></div><div class="flip-card-back" onclick="cardsM1();"><span class="cardT fonti" id="cardM"></span></div></div></div>
+                <div class="flip-card hideM"><div class="flip-card-inner"><div onmouseenter="cards1();" class="flip-card-front"><img alt="Ett smultron på baksidan av ett spelkort." class="smultronI" src="./tpl/images/pa-natet/Smultron.svg"></div><div class="flip-card-back"><span class="cardT fonti" id="card1"></span></div></div></div>
+                <div class="flip-card hideM"><div class="flip-card-inner"><div onmouseenter="cards2();" class="flip-card-front"><img alt="Ett smultron på baksidan av ett spelkort." class="smultronI" src="./tpl/images/pa-natet/Smultron.svg"></div><div class="flip-card-back"><span class="cardT fonti" id="card2"></span></div></div></div>
+                <div class="flip-card hideM"><div class="flip-card-inner"><div onmouseenter="cards3();" class="flip-card-front"><img alt="Ett smultron på baksidan av ett spelkort." class="smultronI" src="./tpl/images/pa-natet/Smultron.svg"></div><div class="flip-card-back"><span class="cardT fonti" id="card3"></span></div></div></div>
             </div>
             <div class="smulE"><span class="endT fonti">Ditt smultronställe på nätet</span></div>
         </div>
@@ -276,7 +276,7 @@
             <ul>
                 <li onclick="tab1M();" id="liF1"> OM OSS </li>
                 <li onclick="tab2M(); rubriM();" id="liF2"> PRODUKTER </li>
-                <li onclick="tab3M();" id="liF3"> <img class="tilt" src="./tpl/images/pa-natet/Smultron_tilt.svg"></li>
+                <li onclick="tab3M();" id="liF3"> <img alt="Ett smultron på baksidan av ett spelkort." class="tilt" src="./tpl/images/pa-natet/Smultron_tilt.svg"></li>
             </ul>
         </div>
     </footer>
