@@ -1,7 +1,4 @@
-<?php
-    session_start();
-    if (isset( $_SESSION["userid"] ) ) { ?>
-        <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Näcks Hall Paintings</title>
@@ -17,27 +14,13 @@
     </header>
     <main>
         <div id="big-container">
-            <a id="arrow" href="../hall.php"></a>
+            <img id="bckI" class="bck" src="./images/hall/paintings.jpg" alt="">
+            <a id="arrow" href="./hall.php"></a>
             <div id="vernisage-container">
                 <h1 id="vernisage-title"></h1>
             </div>
             <div id="painting-container">
                 <div id="filter">
-                </div>
-                <div class="paintings-general shadow" id="painting1">
-                    <img class="painting-general" src="./images/hall/paintings-v1/ubat_frame.jpg" loading="eager">
-                </div>
-                <div class="paintings-general shadow" id="painting2">
-                <img class="painting-general" src="./images/hall/paintings-v1/pluto_frame.jpg" loading="eager">
-                </div>
-                <div class="paintings-general shadow" id="painting3">
-                <img class="painting-general" src="./images/hall/paintings-v1/bucket_hat.jpg" loading="eager">
-                </div>
-                <div class="paintings-general shadow" id="painting4">
-                <img class="painting-general" src="./images/hall/paintings-v1/sexi_frame.jpg" loading="eager">
-                </div>
-                <div class="paintings-general shadow" id="painting5">
-                <img class="painting-general" src="./images/hall/paintings-v1/rikki_frame.jpg" loading="eager">
                 </div>
             </div>
             <div id="notes-container">
@@ -65,12 +48,3 @@
     <script type="text/javascript" src="./scripts/simonsMattematik.js"></script>
 </body>
 </html>
-<?php
-
-    } else {
-
-        include_once 'loser.php';
-
-    };
-
-?>

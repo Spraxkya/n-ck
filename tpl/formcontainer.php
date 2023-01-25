@@ -73,7 +73,7 @@
         <input class="mood-color" type="submit" id="register" name="submit" value="REGISTER">
     </form>
 </div>
-
+<!--
 <script type="text/javascript">
     let saveEmail = document.getElementById("register-email");
     let saveName = document.getElementById("register-username");
@@ -140,7 +140,6 @@
     }
     savePwdLogin.addEventListener("change", function() {
         sessionStorage.setItem("autosave8", savePwdLogin.value);
-    });
-
-</script>
+    }); 
+</script> !-->
 </html>

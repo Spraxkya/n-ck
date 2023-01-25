@@ -14,12 +14,12 @@
         $timedA = $timed->modify('+ 8 hours');
         $timedC = $timedA->format('r');
         
-        $SQL = $conn->prepare("INSERT INTO `de_vet_du_member$ident` (`name`,`last_name`,`email`,`tidslag`) VALUES (?,?,?,?)");
+        $SQL = $conn->prepare("INSERT INTO `el_papi_member$ident` (`name`,`last_name`,`email`,`tidslag`) VALUES (?,?,?,?)");
 
         $SQL->bind_param('ssss', $name, $lastName, $email, $timedC);
         $SQL->execute();
 
-        $SQL = $conn->prepare("SELECT id FROM de_vet_du_member$ident WHERE email = '$email' ");
+        $SQL = $conn->prepare("SELECT id FROM el_papi_member$ident WHERE email = '$email' ");
         $SQL->execute();
 
         $SQL->bind_result($col1);

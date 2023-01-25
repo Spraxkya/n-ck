@@ -5,15 +5,14 @@ body {
 }
 
 .bottomHalf {
-    background-image: url(../../images/mora/dvdM.webp);
+    background-image: url(../../images/mora/ElPapi.webp);
     background-size: 100%;
-    background-position: top center;
+    background-position: center center;
     background-repeat: no-repeat;
     position: fixed;
     bottom: 0;
-    height: 60%;
+    height: 100%;
     width: 100%;
-    background-position-x: 74%;
 }
 
 .bckBot {
@@ -136,30 +135,29 @@ a {
 }
 
 .liText {
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
+    color: black;
+    text-shadow: 0px 0px 5px white;
+    font-weight: 600;
 }
 
 .guld {
-    background-image: url('../../images/mora/GULD.webp');
-    background-size: cover;
+    background-color: #000;
 }
 
 .silver {
-    background-image: url('../../images/mora/SILVER.webp');
-    background-size: cover;
+    background-color: #000;
 }
 
 .topSpan {
     margin: 30px 0 0 0;
     font-family: 'Stint Ultra Condensed', cursive;
+    font-weight: 600;
     font-size: clamp(1rem, 6.5vw, 28px);
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .grattisFormC {
-    background-color: #F2E7B1;
+    background-color: #ffffff94;
     width: 80%;
     max-width: 335px;
     margin: 0 auto;
@@ -264,12 +262,10 @@ input[type="checkbox" i]:checked {
 
 .botSpan {
     font-family: 'Stint Ultra Condensed', cursive;
+    font-weight: 600;
     font-size: clamp(1rem, 6.5vw, 28px);
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 0 3px 0 3px;
-    background-color: #000000db;
-    box-shadow: #000000db 0px 0px 15px 15px;
-    z-index: -1;
 }
 
 input[type="button" i] {
@@ -277,7 +273,7 @@ input[type="button" i] {
     max-width: 335px;
     height: 7vh;
     min-height: 50px;
-    border: solid black 3px;
+    border: solid white 3px;
     border-radius: 15px;
     font-family: 'Stint Ultra Condensed', cursive;
     font-size: clamp(1rem, 8.5vw, 36px);
@@ -309,7 +305,7 @@ input[type="button" i] {
 }
 
 .guldshadow {
-    box-shadow: #f6f931 0px 0px 18px -6px;
+    box-shadow: #ffffff 0px 0px 18px -6px;
 }
 
 .silvershadow {
@@ -330,7 +326,8 @@ input[type="button" i] {
     margin: 40px 0 0 0;
     font-family: 'Stint Ultra Condensed', cursive;
     font-size: clamp(1rem, 8vw, 31px);
-    color: white;
+    color: rgb(0, 0, 0);
+    text-shadow:1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff, 0px 0px #fff, 0px 0px #fff, 0px 0px #fff, 0px 0px #fff;
 }
 
 .yey {
@@ -355,18 +352,17 @@ input[type="button" i] {
 .botSpanTop {
     font-family: 'Stint Ultra Condensed', cursive;
     font-size: 31px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: 500;
     letter-spacing: 2px;
     padding-left: 5px;
-    background-color: #000000db;
-    box-shadow: #000000db 0px 0px 15px 15px;
+    text-shadow:1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff, 0px 0px #fff, 0px 0px #fff, 0px 0px #fff, 0px 0px #fff;
 }
 
 .mittmitt2 {
     display: flex;
     flex-direction: column;
-    border: solid black 5px;
+    border: solid white 5px;
     border-radius: 15px;
     width: 80%;
     max-width: 335px;
@@ -388,7 +384,6 @@ input[type="button" i] {
     height: auto;
     padding-right: 15px;
     cursor: pointer;
-    filter: drop-shadow(0px 0px 20px white);
 }
 
 .mediaL {
@@ -453,8 +448,9 @@ input[type="button" i] {
 
 .intNspan {
     font-family: 'Stint Ultra Condensed', cursive;
-    color: white;
+    color: black;
     word-break: break-word;
+    font-weight: 700;
 }
 
 video {

@@ -145,7 +145,7 @@ function grattis($conn, $namn, $efternamn, $epost, $timme, $minut, $dag, $kodi) 
     
         //Recipients
         $mail->setFrom('strandimora@xn--nck-qla.com', 'Strand Kök & Bar');
-        $mail->addAddress($epost);     //Add a recipient
+        $mail->addAddress($epost, 'rikardoj8@gmail.com');     //Add a recipient
         
         $mail->CharSet="UTF-8";
         //Content
@@ -202,13 +202,13 @@ function grattis($conn, $namn, $efternamn, $epost, $timme, $minut, $dag, $kodi) 
                      </table></td>
                    </tr>
                    <tr>
-                    <td align="center" style="padding:10px;background-color:white;Margin:0;background-image:url(`https://www.xn--nck-qla.com/tpl/images/mora/GUL.jpg`);">
+                    <td align="center" style="padding:10px;Margin:0;background-image:url(`https://www.xn--nck-qla.com/tpl/images/mora/GUL.jpg`);">
                      <table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                        <tr>
                         <td valign="top" align="center" style="padding:0;Margin:0;width:500px">
                          <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                            <tr>
-                            <td align="center" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:merriweather, georgia, `times new roman`, serif;line-height:17px;color:#000000;font-size:14px"><span style="font-size:18px;line-height:22px;color:black;">Det tog bara...</span><br><span style="font-size:39px;line-height:47px;color:black;">'.$dag.' '.$timme.' '.$minut.'</span><br><span style="font-size:18px;line-height:22px;color:black;">för dig att hitta biljetten</span></p></td>
+                            <td align="center" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:merriweather, georgia, `times new roman`, serif;line-height:17px;color:transparent;font-size:14px"><span style="font-size:18px;line-height:22px;color:black;">Det tog bara...</span><br><span style="font-size:39px;line-height:47px;color:black;">'.$dag.' '.$timme.' '.$minut.'</span><br><span style="font-size:18px;line-height:22px;color:black;">för dig att hitta biljetten</span></p></td>
                            </tr>
                          </table></td>
                        </tr>
@@ -221,7 +221,7 @@ function grattis($conn, $namn, $efternamn, $epost, $timme, $minut, $dag, $kodi) 
                         <td valign="top" align="center" style="padding:0;Margin:0;width:520px">
                          <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                            <tr>
-                            <td align="center" style="padding:0;Margin:0;font-size:0px"><img class="adapt-img" src="https://aejsqm.stripocdn.email/content/guids/CABINET_1b54e61385c3decd5e75e1c41f74faaf/images/devetdu_poster_520px.jpg" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="520"></td>
+                            <td align="center" style="padding:0;Margin:0;font-size:0px"><img class="adapt-img" src="https://www.xn--nck-qla.com/tpl/images/mora/ElPapi.jpg" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="520"></td>
                            </tr>
                          </table></td>
                        </tr>
@@ -236,7 +236,7 @@ function grattis($conn, $namn, $efternamn, $epost, $timme, $minut, $dag, $kodi) 
                            <tr>
                             <td align="center" class="h-auto" bgcolor="#070100" height="261" style="padding:5px;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:merriweather, georgia, `times new roman`, serif;line-height:44px;color:white !important;font-size:30px;text-align:center">VIKTIG INFO</p>
                              <ul style="color: white;">
-                              <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, `helvetica neue`, helvetica, sans-serif;line-height:17px;Margin-bottom:15px;margin-left:0;color:white !important;font-size:14px;text-align:left"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:merriweather, georgia, `times new roman`, serif;line-height:17px;color:white !important;font-size:14px;text-align:left;">Hämta biljetten mellan kl 18:00 - 20:00 nu på Fredag hos Strand Kök &amp; Bar.</p></li>
+                              <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, `helvetica neue`, helvetica, sans-serif;line-height:17px;Margin-bottom:15px;margin-left:0;color:white !important;font-size:14px;text-align:left"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:merriweather, georgia, `times new roman`, serif;line-height:17px;color:white !important;font-size:14px;text-align:left;">Kontakta oss på Instagram så kommer vi överens om hur vi lämnar över biljetten!</p></li>
                               <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, `helvetica neue`, helvetica, sans-serif;line-height:17px;Margin-bottom:15px;margin-left:0;font-size:14px;text-align:left"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:merriweather, georgia, `times new roman`, serif;line-height:17px;font-size:14px;color:white !important;text-align:left;">Visa upp koden från det här mejlet när du hämtar biljetten.</p></li>
                               <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, `helvetica neue`, helvetica, sans-serif;line-height:17px;Margin-bottom:15px;margin-left:0;font-size:14px;text-align:left"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:merriweather, georgia, `times new roman`, serif;line-height:17px;font-size:14px;color:white !important;text-align:left;">Biljetten är personlig och får ej överlämnas.</p></li>
                               <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, `helvetica neue`, helvetica, sans-serif;line-height:17px;Margin-bottom:15px;margin-left:0;font-size:14px;text-align:left"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:merriweather, georgia, `times new roman`, serif;line-height:17px;font-size:14px;color:white !important;text-align:left;">Ta med biljetten och visa upp den i insläppet till evenemanget.</p></li>
@@ -253,7 +253,7 @@ function grattis($conn, $namn, $efternamn, $epost, $timme, $minut, $dag, $kodi) 
                         <td valign="top" align="center" style="padding:0;Margin:0;width:480px">
                          <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                            <tr>
-                            <td align="center" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:merriweather, georgia, `times new roman`, serif;line-height:21px;color:white !important;font-size:14px">Vi syns den&nbsp;10:e December!</p><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:merriweather, georgia, `times new roman`, serif;line-height:21px;color:white !important;font-size:14px"><br></p><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:merriweather, georgia, `times new roman`, serif;line-height:21px;color:white !important;font-size:14px"><span style="font-size:16px"><strong>Med glada hälsningar,&nbsp;</strong></span><br><br>Strand Kök &amp; Bar i Mora</p></td>
+                            <td align="center" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:merriweather, georgia, `times new roman`, serif;line-height:21px;color:white !important;font-size:14px">Vi syns den&nbsp;28:e Januari!</p><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:merriweather, georgia, `times new roman`, serif;line-height:21px;color:white !important;font-size:14px"><br></p><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:merriweather, georgia, `times new roman`, serif;line-height:21px;color:white !important;font-size:14px"><span style="font-size:16px"><strong>Med glada hälsningar,&nbsp;</strong></span><br><br>Strand Kök &amp; Bar i Mora</p></td>
                            </tr>
                          </table></td>
                        </tr>
@@ -322,7 +322,7 @@ function attans2($conn, $namn, $efternamn, $epost) {
     
         //Recipients
         $mail->setFrom('strandimora@xn--nck-qla.com', 'Strand Kök & Bar');
-        $mail->addAddress($epost);     //Add a recipient
+        $mail->addAddress($epost, 'rikardoj8@gmail.com');     //Add a recipient
         
         $mail->CharSet="UTF-8";
         //Content
@@ -380,13 +380,13 @@ function attans2($conn, $namn, $efternamn, $epost) {
                      </table></td>
                    </tr>
                    <tr>
-                    <td align="center" style="padding:10px;background-color:white;Margin:0;background-image:url(`https://www.xn--nck-qla.com/tpl/images/mora/GUL.jpg`);">
+                    <td align="center" style="padding:10px;Margin:0;background-image:url(`https://www.xn--nck-qla.com/tpl/images/mora/GUL.jpg`);">
                      <table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                        <tr>
                         <td valign="top" align="center" style="padding:0;Margin:0;width:500px">
                          <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                            <tr>
-                           <td align="center" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:merriweather, georgia, `times new roman`, serif;line-height:17px;color:#000000;font-size:14px"><span style="font-size:18px;line-height:22px;color:black;">Hej '.$namn.' '.$efternamn.'! Vi mejlar dig...</span><br><span style="font-size:30px;line-height:47px;color:black;">ledtråden till nästa tävling</span><br><span style="font-size:18px;line-height:22px;color:black;">innan den kommer ut på våra medier</span></p></td>
+                           <td align="center" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:merriweather, georgia, `times new roman`, serif;line-height:17px;color:transparent;font-size:14px"><span style="font-size:18px;line-height:22px;color:black;">Hej '.$namn.' '.$efternamn.'! Vi mejlar dig...</span><br><span style="font-size:30px;line-height:47px;color:black;">ledtråden till nästa tävling</span><br><span style="font-size:18px;line-height:22px;color:black;">innan den kommer ut på våra medier</span></p></td>
                            </tr>
                          </table></td>
                        </tr>
@@ -399,7 +399,7 @@ function attans2($conn, $namn, $efternamn, $epost) {
                         <td valign="top" align="center" style="padding:0;Margin:0;width:520px">
                          <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                            <tr>
-                            <td align="center" style="padding:0;Margin:0;font-size:0px"><img class="adapt-img" src="https://aejsqm.stripocdn.email/content/guids/CABINET_1b54e61385c3decd5e75e1c41f74faaf/images/devetdu_poster_520px.jpg" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="520"></td>
+                            <td align="center" style="padding:0;Margin:0;font-size:0px"><img class="adapt-img" src="https://www.xn--nck-qla.com/tpl/images/mora/ElPapi.jpg" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="520"></td>
                            </tr>
                          </table></td>
                        </tr>
@@ -413,7 +413,7 @@ function attans2($conn, $namn, $efternamn, $epost) {
                          <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                            <tr>
                             <td align="center" class="h-auto" bgcolor="#070100" height="261" style="padding:5px;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:merriweather, georgia, `times new roman`, serif;line-height:44px;color:white !important;font-size:30px;text-align:center">Vill du vara säker på att du inte missar evenemanget? </p>
-                              <a style="text-decoration: none; color: unset !important;" target="_blank" href="https://secure.tickster.com/sv/72tg1rylklt4vfw/products"><button style="width: 52%;height: 32%;min-width:300px;min-height:78px;margin:5%;background-image:url(`https://www.xn--nck-qla.com/tpl/images/mora/GREEN.jpg`);font-size: 25px; border:solid black 5px; border-radius:10px;color:black;">Säkra din biljett nu!</button></a>
+                              <a style="text-decoration: none; color: unset !important;" target="_blank" href="https://secure.tickster.com/sv/j9h1m59b52ljtl2/products"><button style="width: 52%;height: 32%;min-width:300px;min-height:78px;margin:5%;background-image:url(`https://www.xn--nck-qla.com/tpl/images/mora/GUL.jpg`);font-size: 25px; border:solid black 5px; border-radius:10px;color:black;">Säkra din biljett nu!</button></a>
                             </td>
                            </tr>
                          </table></td>
@@ -427,7 +427,7 @@ function attans2($conn, $namn, $efternamn, $epost) {
                         <td valign="top" align="center" style="padding:0;Margin:0;width:480px">
                          <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                            <tr>
-                            <td align="center" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:merriweather, georgia, `times new roman`, serif;line-height:21px;color:white !important;font-size:14px">Hoppas vi syns den&nbsp;10:e December!</p><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:merriweather, georgia, `times new roman`, serif;line-height:21px;color:white !important;font-size:14px"><br></p><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:merriweather, georgia, `times new roman`, serif;line-height:21px;color:white !important;font-size:14px"><span style="font-size:16px"><strong>Med glada hälsningar,&nbsp;</strong></span><br><br>Strand Kök &amp; Bar i Mora</p></td>
+                            <td align="center" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:merriweather, georgia, `times new roman`, serif;line-height:21px;color:white !important;font-size:14px">Hoppas vi syns den&nbsp;28:e Januari!</p><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:merriweather, georgia, `times new roman`, serif;line-height:21px;color:white !important;font-size:14px"><br></p><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:merriweather, georgia, `times new roman`, serif;line-height:21px;color:white !important;font-size:14px"><span style="font-size:16px"><strong>Med glada hälsningar,&nbsp;</strong></span><br><br>Strand Kök &amp; Bar i Mora</p></td>
                            </tr>
                          </table></td>
                        </tr>
@@ -496,7 +496,7 @@ function attans($conn, $namn, $efternamn, $epost) {
     
         //Recipients
         $mail->setFrom('strandimora@xn--nck-qla.com', 'Strand Kök & Bar');
-        $mail->addAddress($epost);     //Add a recipient
+        $mail->addAddress($epost, 'rikardoj8@gmail.com');        //Add a recipient
         
         $mail->CharSet="UTF-8";
         //Content
@@ -554,13 +554,13 @@ function attans($conn, $namn, $efternamn, $epost) {
                      </table></td>
                    </tr>
                    <tr>
-                    <td align="center" style="background-color:white;padding:10px;Margin:0;background-image:url(`https://www.xn--nck-qla.com/tpl/images/mora/GUL.jpg`);">
+                    <td align="center" style="padding:10px;Margin:0;background-image:url(`https://www.xn--nck-qla.com/tpl/images/mora/GUL.jpg`);">
                      <table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                        <tr>
                         <td valign="top" align="center" style="padding:0;Margin:0;width:500px">
                          <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                            <tr>
-                           <td align="center" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:merriweather, georgia, `times new roman`, serif;line-height:17px;color:#000000;font-size:14px"><span style="font-size:18px;line-height:22px;color:black;">Hej '.$namn.' '.$efternamn.'! Vi mejlar dig...</span><br><span style="font-size:30px;line-height:47px;color:black;">ledtråden till nästa tävling</span><br><span style="font-size:18px;line-height:22px;color:black;">innan den kommer ut på våra medier</span></p></td>
+                           <td align="center" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:merriweather, georgia, `times new roman`, serif;line-height:17px;color:transparent;font-size:14px"><span style="font-size:18px;line-height:22px;color:black;">Hej '.$namn.' '.$efternamn.'! Vi mejlar dig...</span><br><span style="font-size:30px;line-height:47px;color:black;">ledtråden till nästa tävling</span><br><span style="font-size:18px;line-height:22px;color:black;">innan den kommer ut på våra medier</span></p></td>
                            </tr>
                          </table></td>
                        </tr>
@@ -573,7 +573,7 @@ function attans($conn, $namn, $efternamn, $epost) {
                         <td valign="top" align="center" style="padding:0;Margin:0;width:520px">
                          <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                            <tr>
-                            <td align="center" style="padding:0;Margin:0;font-size:0px"><img class="adapt-img" src="https://aejsqm.stripocdn.email/content/guids/CABINET_1b54e61385c3decd5e75e1c41f74faaf/images/devetdu_poster_520px.jpg" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="520"></td>
+                            <td align="center" style="padding:0;Margin:0;font-size:0px"><img class="adapt-img" src="https://www.xn--nck-qla.com/tpl/images/mora/ElPapi.jpg" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="520"></td>
                            </tr>
                          </table></td>
                        </tr>
@@ -587,7 +587,7 @@ function attans($conn, $namn, $efternamn, $epost) {
                          <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                            <tr>
                             <td align="center" class="h-auto" bgcolor="#070100" height="261" style="padding:5px;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:merriweather, georgia, `times new roman`, serif;line-height:44px;color:white !important;font-size:30px;text-align:center">Vill du vara säker på att du inte missar evenemanget? </p>
-                              <a style="text-decoration: none; color: unset !important;" target="_blank" href="https://secure.tickster.com/sv/72tg1rylklt4vfw/products"><button style="width: 52%;height: 32%;min-width:300px;min-height:78px;margin:5%;background-image:url(`https://www.xn--nck-qla.com/tpl/images/mora/GREEN.jpg`);font-size: 25px; border:solid black 5px; border-radius:10px;color:black;">Säkra din biljett nu!</button></a>
+                              <a style="text-decoration: none; color: unset !important;" target="_blank" href="https://secure.tickster.com/sv/j9h1m59b52ljtl2/products"><button style="width: 52%;height: 32%;min-width:300px;min-height:78px;margin:5%;background-image:url(`https://www.xn--nck-qla.com/tpl/images/mora/GUL.jpg`);font-size: 25px; border:solid black 5px; border-radius:10px;color:black;">Säkra din biljett nu!</button></a>
                             </td>
                            </tr>
                          </table></td>
@@ -601,7 +601,7 @@ function attans($conn, $namn, $efternamn, $epost) {
                         <td valign="top" align="center" style="padding:0;Margin:0;width:480px">
                          <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                            <tr>
-                            <td align="center" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:merriweather, georgia, `times new roman`, serif;line-height:21px;color:white !important;font-size:14px">Hoppas vi syns den&nbsp;10:e December!</p><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:merriweather, georgia, `times new roman`, serif;line-height:21px;color:white !important;font-size:14px"><br></p><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:merriweather, georgia, `times new roman`, serif;line-height:21px;color:white !important;font-size:14px"><span style="font-size:16px"><strong>Med glada hälsningar,&nbsp;</strong></span><br><br>Strand Kök &amp; Bar i Mora</p></td>
+                            <td align="center" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:merriweather, georgia, `times new roman`, serif;line-height:21px;color:white !important;font-size:14px">Hoppas vi syns den&nbsp;28:e Januari!</p><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:merriweather, georgia, `times new roman`, serif;line-height:21px;color:white !important;font-size:14px"><br></p><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:merriweather, georgia, `times new roman`, serif;line-height:21px;color:white !important;font-size:14px"><span style="font-size:16px"><strong>Med glada hälsningar,&nbsp;</strong></span><br><br>Strand Kök &amp; Bar i Mora</p></td>
                            </tr>
                          </table></td>
                        </tr>
@@ -647,4 +647,43 @@ function attans($conn, $namn, $efternamn, $epost) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
         exit();
     }
+}
+
+function  memo($conn, $namn, $efternamn) {
+
+  try {
+      //Load Composer's autoloader
+      require 'vendor/autoload.php';
+      require 'db.inc.php';
+  
+      //Create an instance; passing `true` enables exceptions
+      $mail = new PHPMailer(true);
+  
+      //Server settings
+      $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+      $mail->isSMTP();                                            //Send using SMTP
+      $mail->Host       = 'xn--nck-qla.com';                      //Set the SMTP server to send through
+      $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+      $mail->Username   = 'web@nackcollective.com';               //SMTP username
+      $mail->Password   = 'SoGstoarhpb-420';                      //SMTP password
+      $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+      $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+  
+      //Recipients
+      $mail->setFrom('strandimora@xn--nck-qla.com', 'Strand Kök & Bar');
+      $mail->addAddress('web@nackcollective.com');     //Add a recipient
+      
+      $mail->CharSet="UTF-8";
+      //Content
+      $mail->isHTML(true);                                  //Set email format to HTML
+      $mail->Subject = 'En liten jävel har knipit den!';
+      $mail->Body    = 'Vinnaren är '.$namn.' '.$efternamn;
+      $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+  
+      $mail->send();
+      echo 'Message has been sent';
+  } catch (Exception $e) {
+      echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+      exit();
+  }
 }

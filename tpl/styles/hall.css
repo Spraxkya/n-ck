@@ -54,9 +54,13 @@ ul {
 #big-container {
     position: relative;
     display: flex;
-    background-repeat: no-repeat; 
-    background: url('../images/hall/hall.jpg');
-    overflow: hidden;
+    background-repeat: no-repeat;
+    overflow: hidden;    
+    height: 100vh;
+}
+
+.bck {
+    position: absolute;
 }
 
 /* Chat Prompt */
@@ -87,8 +91,6 @@ ul {
 #doNotEnter {
     filter: url(#startDo);
     cursor: pointer;
-    width: 11.927083333333333333333333333333%;
-    height: 53.041622198505869797225186766275%;
 }
 
 #doNotEnter:hover {
@@ -98,7 +100,7 @@ ul {
 #stone-door {
     position: absolute;
     top: 35.5%;
-    right: 12.68%;
+    left: 78.97%;
     width: 8.3854%;
     height: 37.88687%;
 }
@@ -110,8 +112,6 @@ ul {
 #stoneDoor {
     filter: url(#startStone);
     cursor: pointer;
-    width: 8.3854%;
-    height: 37.88687%;
 }
 
 #stoneDoor:hover {
@@ -126,6 +126,11 @@ ul {
     width: 7.6%;
     height: 31.8%;
     transform: perspective(112px) rotateY(11.5deg) skew(-1deg, -1deg);
+    -moz-transform: perspective(112px) rotateY(11.5deg) skew(-1deg, -1deg);
+    -ms-transform: perspective(112px) rotateY(11.5deg) skew(-1deg, -1deg);
+    -o-transform: perspective(112px) rotateY(11.5deg) skew(-1deg, -1deg);
+    -webkit-transform: perspective(112px) rotateY(11.5deg) skew(-1deg, -1deg);
+
 }
 
 #profile-door:hover {
@@ -138,10 +143,14 @@ ul {
     position: absolute;
     display: block;
     top: 29.3%;
-    right: -0.3%;
-    width: 8.7%;
+    left: 91.9%;
+    width: 7.7%;
     height: 47%;
-    transform: perspective(480px) rotateY(328deg) skew(359deg, 0deg) rotateX(357.5deg);
+    transform: perspective(160px) rotateY(-13deg) skew(0deg, 0deg);
+    -moz-transform: perspective(160px) rotateY(-13deg) skew(0deg, 0deg);
+    -ms-transform: perspective(160px) rotateY(-13deg) skew(0deg, 0deg);
+    -o-transform: perspective(160px) rotateY(-13deg) skew(0deg, 0deg);
+    -webkit-transform: perspective(160px) rotateY(-13deg) skew(0deg, 0deg);
 }
 
 #boutique-door:hover {
@@ -174,7 +183,7 @@ ul {
     font-weight: 500;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: -5px;
+    letter-spacing: -2px;
     text-shadow: 0 5px 5px #00000078;
 }
 
@@ -187,7 +196,7 @@ ul {
     height: fit-content;
     top: 32%;
     left: 18%;
-    font-size: clamp(2vw, 4.27vh, 5.5vw);
+    font-size: clamp(2.5vw, 4.5vh, 4.5vh);
     font-weight: 600;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -195,14 +204,18 @@ ul {
     line-height: inherit;
     text-shadow: -1px -1px 3px #ffffff36, 1px 1px 3px #ffffff36, 1px 0px 3px #ffffff36, -1px 1px 3px #ffffff36;
     transform: perspective(600px) rotate3d(8, 25, 5, 50deg) scale3d(1, 1.15, 1);
+    -moz-transform: perspective(600px) rotate3d(8, 25, 5, 50deg) scale3d(1, 1.15, 1);
+    -ms-transform: perspective(600px) rotate3d(8, 25, 5, 50deg) scale3d(1, 1.15, 1);
+    -o-transform: perspective(600px) rotate3d(8, 25, 5, 50deg) scale3d(1, 1.15, 1);
+    -webkit-transform: perspective(600px) rotate3d(8, 25, 5, 50deg) scale3d(1, 1.15, 1);
 }
 
 #boutique-title {
     position: absolute;
     height: fit-content;
     top: 19.5%;
-    right: -2.5%;
-    font-size: clamp(3.24vw, 6.5vh, 13vw);
+    left: 85.6%;
+    font-size: clamp(3.24vw, 6.5vh, 6.5vh);
     font-weight: 600;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -210,4 +223,66 @@ ul {
     line-height: inherit;
     text-shadow: -1px -1px 3px #ffffff36, 1px 1px 3px #ffffff36, 1px 0px 3px #ffffff36, -1px 1px 3px #ffffff36;
     transform: perspective(600px) rotate3d(-6, 25, 5, 307deg) scale3d(1, 1.15, 1);
+    -moz-transform: perspective(600px) rotate3d(-6, 25, 5, 307deg) scale3d(1, 1.15, 1);
+    -ms-transform: perspective(600px) rotate3d(-6, 25, 5, 307deg) scale3d(1, 1.15, 1);
+    -o-transform: perspective(600px) rotate3d(-6, 25, 5, 307deg) scale3d(1, 1.15, 1);
+    -webkit-transform: perspective(600px) rotate3d(-6, 25, 5, 307deg) scale3d(1, 1.15, 1);
+}
+
+@media screen and (min-height: 900px) and (hover:none) and (pointer:coarse) {
+    #boutique-title {
+        position: absolute;
+        height: fit-content;
+        top: 19.5%;
+        left: 85.6%;
+        font-size: clamp(3.24vw, 6vh, 6vh) !important;
+        font-weight: 600; 
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: -2px;
+        line-height: inherit;
+        text-shadow: -1px -1px 3px #ffffff36, 1px 1px 3px #ffffff36, 1px 0px 3px #ffffff36, -1px 1px 3px #ffffff36;
+        transform: perspective(750px) rotate3d(-6, 25, 5, 307deg) scale3d(1, 1.15, 1);
+        -moz-transform: perspective(750px) rotate3d(-6, 25, 5, 307deg) scale3d(1, 1.15, 1);
+        -ms-transform: perspective(750px) rotate3d(-6, 25, 5, 307deg) scale3d(1, 1.15, 1);
+        -o-transform: perspective(750px) rotate3d(-6, 25, 5, 307deg) scale3d(1, 1.15, 1);
+        -webkit-transform: perspective(750px) rotate3d(-6, 25, 5, 307deg) scale3d(1, 1.15, 1);
+    }
+
+    #boutique-door {
+        position: absolute;
+        display: block;
+        top: 29.3%;
+        left: 91.9%;
+        width: 7.7%;
+        height: 47%;
+        transform: perspective(160px) rotateY(-10deg) skew(0deg, 0deg);
+        -moz-transform: perspective(160px) rotateY(-10deg) skew(0deg, 0deg);
+        -ms-transform: perspective(160px) rotateY(-10deg) skew(0deg, 0deg);
+        -o-transform: perspective(160px) rotateY(-10deg) skew(0deg, 0deg);
+        -webkit-transform: perspective(160px) rotateY(-10deg) skew(0deg, 0deg);
+    }
+
+}
+
+@media screen and (min-width: 1700px) and (hover:hover) and (pointer:fine) {
+
+    #boutique-title {
+        position: absolute;
+        height: fit-content;
+        top: 19.5%;
+        left: 85.6%;
+        font-size: clamp(3.24vw, 6.3vh, 6.3vh) !important;
+        font-weight: 600; 
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: -2px;
+        line-height: inherit;
+        text-shadow: -1px -1px 3px #ffffff36, 1px 1px 3px #ffffff36, 1px 0px 3px #ffffff36, -1px 1px 3px #ffffff36;
+        transform: perspective(750px) rotate3d(-6, 25, 5, 307deg) scale3d(1, 1.15, 1);
+        -moz-transform: perspective(750px) rotate3d(-6, 25, 5, 307deg) scale3d(1, 1.15, 1);
+        -ms-transform: perspective(750px) rotate3d(-6, 25, 5, 307deg) scale3d(1, 1.15, 1);
+        -o-transform: perspective(750px) rotate3d(-6, 25, 5, 307deg) scale3d(1, 1.15, 1);
+        -webkit-transform: perspective(750px) rotate3d(-6, 25, 5, 307deg) scale3d(1, 1.15, 1);
+    }
 }

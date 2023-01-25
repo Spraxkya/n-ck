@@ -1,15 +1,12 @@
-<?php
-    session_start();
-    if (isset( $_SESSION["userid"] ) ) { ?>
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Näcks Hall</title>
     <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://xn--nck-qla.com/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="./tpl/styles/hall.css" />
-    <link rel="stylesheet" type="text/css" href="./tpl/styles/universal.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/hall.css?3" />
+    <link rel="stylesheet" type="text/css" href="./styles/universal.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
@@ -24,39 +21,8 @@
     <header>
     </header>
     <main>
-        <div id="chat-container">
-            <script>
-                /* "Chat" */
-                const chat = document.getElementById('chat-container');
-                const chat_x = 10;
-
-                window.addEventListener("scroll", function(){
-                    var scroll_x = this.scrollX;
-                    
-                    chat.style.left = scroll_x + chat_x + "px";
-                });
-
-                function chatModule() {
-                    if(sessionStorage.getItem('conversation') === null) {
-                        conversation = "random";
-                        window.sessionStorage.setItem("conversation", conversation);
-                    }
-
-                    switch(sessionStorage.getItem('conversation')) {
-                        case 'curtain':
-                            chat.innerHTML = '<h4> -Janitor</h4> <p> Där kommer inte du in</p>';
-                            console.log('hej babe');
-                        break;
-                        case 'stone':
-                            chat.innerHTML = '<h4> -Janitor</h4> <p> Tror int du är stark nog <br> för att komma in</p>';
-                            console.log('hej babe');
-                        break;
-                    }
-
-                }
-            </script>
-        </div>
         <div id="big-container">
+            <img id="bckI"  class="bck" src="./images/hall/hall.jpg" alt="">
             <svg id="doNotEnter-door" class="big-doorway" onclick="chatModule();" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
                     <filter id="shadowDoNotEnter">
@@ -95,12 +61,12 @@
                     />
                 </g>
             </svg>
-            <a id="profile-door" class="big-doorway" href="./tpl/konto.tpl.php"></a>
+            <a id="profile-door" class="big-doorway"></a>
             <h2 id="profile-title">PROFILE</h2>
             <div id="vernisage-container">
                 <h1 id="vernisage-title"></h1>
             </div>
-            <a id="arrow" href="./tpl/paintings.tpl.php"></a>
+            <a id="arrow" href="./paintings.php"></a>
             <svg id="stone-door" class="big-doorway" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
                     <filter id="shadowStone">
@@ -138,23 +104,14 @@
                     />
                 </g>
             </svg>
-            <a id="boutique-door" class="big-doorway" href="./tpl/store.tpl.php"> </a>
+            <a id="boutique-door" class="big-doorway"> </a>
             <h2 id="boutique-title">BOUTIQUE</h2>
         </div>
     </main>
     <footer>
     </footer>
-    <script type="text/javascript" src="./tpl/scripts/hall.js"></script>
-    <script type="text/javascript" src="./tpl/scripts/simonsMattematik.js"></script>
+    <script type="text/javascript" src="./scripts/hall.js"></script>
+    <script type="text/javascript" src="./scripts/simonsMattematik.js"></script>
 </body>
 
 </html>
-<?php
-
-    } else {
-
-        include_once 'loser.php';
-
-    };
-
-?>

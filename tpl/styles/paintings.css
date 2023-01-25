@@ -47,10 +47,15 @@ ul {
 }
 
 #big-container {
+    position: relative;
     display: flex;
-    flex-direction: column;
-    background-repeat: no-repeat; 
-    background: url('../images/hall/paintings.jpg');
+    background-repeat: no-repeat;
+    overflow: hidden;    
+    height: 100vh;
+}
+
+.bck {
+    position: absolute;
 }
 
 /* navigation */
@@ -93,12 +98,12 @@ ul {
 }
 
 #painting-container {
-    height: 27.1%;
-    width: 81.9%;
-    position: relative;
-    top: 13.3%;
-    left: 9.3%;
-    display: flex;
+    position: absolute;
+    height: 35%;
+    width: 80%;
+    top: 36%;
+    left: 10%;
+    background-color: blueviolet;
 }
 
 .paintings-general {

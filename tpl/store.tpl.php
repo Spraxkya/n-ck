@@ -1,25 +1,6 @@
 <?php
-session_start();
-
     require_once '../inc/db.inc.php';
     require '../inc/products.inc.php';
-    
-    $mail = $_SESSION["mailu"];
-    $id = $_SESSION["userid"];
-
-    $sql = "SELECT * FROM members WHERE user_id=?";
-    $stmt = $conn->prepare($sql); 
-    $stmt->bind_param("i", $id);
-    $stmt->execute();
-    $result = $stmt->get_result();
-    while ($row = $result->fetch_assoc()) {
-        $name = $row['customer_name'];
-        $adress1 = $row['customer_adress1'];
-        $city = $row['customer_city'];
-        $country = $row['customer_country'];
-        $postal = $row['customer_postal'];
-    }
-
 ?>
 
 <!DOCTYPE html>
@@ -44,28 +25,6 @@ session_start();
         </script>
     </header>
     <main>
-        <div class="hidden-values">
-            <span id="mail">
-                <?php echo $mail?>
-            </span>
-            <div id="customer-details">
-                <span id="name">
-                    <?php echo $name ?>
-                </span>
-                <span id="adress1">
-                    <?php echo $adress1 ?>
-                </span>
-                <span id="city">
-                    <?php echo $city ?>
-                </span>
-                <span id="country">
-                    <?php echo $country ?>
-                </span>
-                <span id="postal">
-                    <?php echo $postal; ?>
-                </span>
-            </div>
-        </div>
         <div id="big-container">
             <div id="products">
                 <div class="product1" id="product1">

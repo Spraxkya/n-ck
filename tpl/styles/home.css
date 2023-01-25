@@ -4,6 +4,10 @@
     --warning-color: #ffc107;
 }
 
+html {
+    background-color: rgb(42, 42, 255);
+}
+
 body {
     margin: 0;
     overflow-x: hidden;
@@ -59,42 +63,52 @@ ul {
     position: relative;
     display: flex;
     background-repeat: no-repeat; 
-    background: url('../images/lights-on.jpg');
     overflow: hidden;
+    height: 100vh;
+}
+
+.bck {
+    position: absolute;
 }
 
 #preload {
     display: none;
 }
-  
+
+
 /* Modes */
 
 #lightSwitch {
-    position: relative;
-    left: 49.8%;
+    position: absolute;
+    height: 12%;
+    left: 49.63%;
     top: 37.5%;
 }
 
 .lightSwitch-img {
-    height: 12%;
+    position: absolute;
+    height: 100%;
+    width: auto;
 }
 
 #lightbutton1 {
     position: relative;
     width: 1.14%;
     height: 5%;
-    left: 45.09%;
-    top: 41%;
+    left: 51.53%;
+    top: 40.99%;
     cursor: pointer;
+    z-index: 2;
 }
 
 #lightbutton2 {
     position: relative;
     width: 1.14%;
     height: 5%;
-    left: 45.62%;
-    top: 41%;
+    left: 52.075%;
+    top: 41.2%;
     cursor: pointer;
+    z-index: 2;
 }
 
 .mood-color {
@@ -102,21 +116,41 @@ ul {
 }
 
 .skyltStyle {
-    position: relative;
+    position: absolute;
     top: 68%;
-    left: 405%;
+    left: 87%;
     height: 10%;
+}
+
+/* video */
+
+#videoUv {
+    position: absolute;
 }
 
 /* Bulletin Board */
 
 #bulletin-board {
-    position: relative;
+    position: absolute;
+    z-index: 2;
     width: 34.1%;
     height: 54.6%;
     top: 12.4%;
-    left: 50.7%;
+    left: 59.6%;
     display: flex;
+}
+
+.dikt {
+    font-family: 'Gloria Hallelujah';
+    text-align: left;
+    font-size: 1em;
+    margin: 0;
+    font-weight: bold;
+    color: #000000;
+    width: 52%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #resetPwd-form {
@@ -168,11 +202,14 @@ ul {
 }
 
 /* Forms */
-#form-container {
-    width: 50%;
+.form-container {
+    position: absolute;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #tabs {
@@ -197,12 +234,13 @@ ul {
 
 
 input {
-    font-family: 'Gloria Hallelujah', cursive; 
-    background-color: rgba(255, 255, 255, 0.398);
+    font-family: 'Gloria Hallelujah', cursive;
+    background-color: rgb(124 243 255 / 35%);
     margin: 0em;
     padding: 1px 2px;
     border: solid transparent;
     margin-right: 4%;
+    width: 60%;
 }
 
 .login-input {

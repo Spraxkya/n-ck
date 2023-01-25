@@ -32,7 +32,7 @@ function skicka1() {
     if(validation1() !== true) {
         border.style.border = "solid #a30404 2px";
         border.style.backgroundColor = "rgb(163 4 4 / 19%)";
-        text.innerHTML = 'Din epost är inte kosher';
+        text.innerHTML = 'Din epost är inte okej';
         text.style.color = '#a30404';
     } else {
         klick.click();
@@ -49,19 +49,20 @@ function hellYeah() {
 function scaleBro() {
     heighti = window.innerHeight;
     widthi = window.innerWidth;
+    jas = window.outerHeight;
     bild = document.getElementById('bros');
 
     if(heighti < widthi) {
-        bild.style.backgroundImage = 'url(https://näck.com/tpl/images/mora/dvd.webp)';
-        bild.style.backgroundPosition = 'unset';
-        bild.style.backgroundPositionX ='74%';
+        bild.style.backgroundImage = 'url(https://näck.com/tpl/images/mora/ElPapi.webp)';
+        bild.style.backgroundPosition = 'center center';
         bild.style.backgroundSize = 'cover';
-        bild.style.height = '80%';
+        bild.style.height = '100%';
+        console.log('jas');
     } else if(heighti > widthi){
-        bild.style.backgroundImage = 'url(https://näck.com/tpl/images/mora/dvdM.webp)';
-        bild.style.backgroundPosition = 'top center';
-        bild.style.backgroundSize = '100%';
-        bild.style.height = '60%';
+        bild.style.backgroundImage = 'url(https://näck.com/tpl/images/mora/ElPapi.webp)';
+        bild.style.backgroundPosition = 'center center';
+        bild.style.backgroundSize = '175%';
+        console.log('saj');
     }
 }
 
