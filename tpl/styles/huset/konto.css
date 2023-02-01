@@ -1,0 +1,57 @@
+/* font-family: 'Pangolin', cursive; */
+
+body {
+    background-image: url(../images/bathroom.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+main {
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    margin: 0;
+    color: white;
+    font-family: 'Monoton', cursive;
+}
+
+h2 {
+    color: red;
+    margin: 0;
+    font-family: 'Monoton', cursive;
+}
+
+/* Konto */
+
+#konto-container {
+    position: absolute;
+    background-color: #ffffff36;
+    width: 851px;
+    height: 59.2%;
+    display: flex;
+    margin-left: 26px;
+    flex-direction: column;
+}
+
+#konto-information {
+    height: 100%;
+}
+
+#tabs {
+    position: relative;
+    background-color: #0000007d;
+    height: 12%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#customer-form {
+    display: table-caption;
+}

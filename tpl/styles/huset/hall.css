@@ -1,0 +1,171 @@
+html {
+    min-height: fit-content;
+    min-width: fit-content;
+}
+
+body {
+    margin: 0;
+    min-height: fit-content;
+    min-width: fit-content;
+}
+
+main {
+    position: relative;
+    min-height: fit-content;
+    min-width: fit-content;
+}
+
+.bck {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* navigation */
+#doNotEnter-door {
+    position: absolute;
+    top: 27%;
+}
+
+#tranSvg1 {
+    transition: all ease 0.5s;
+}
+
+#doNotEnter {
+    filter: url(#startDo);
+    cursor: pointer;
+}
+
+#doNotEnter:hover {
+    filter: url(#shadowDoNotEnter);
+}
+
+
+#profile-door {
+    position: absolute;
+    top: 36%;
+    left: 16.9%;
+}
+
+#tranSvg3 {
+    transition: all ease 0.5s;
+}
+
+#profile {
+    filter: url(#startProfile);
+    cursor: pointer;
+}
+
+#profile:hover {
+    filter: url(#shadowProfile);
+}
+
+#stone-door {
+    position: absolute;
+    top: 35.5%;
+    left: 78.97%;
+}
+
+#tranSvg2 {
+    transition: all ease 0.5s;
+}
+
+#stoneDoor {
+    filter: url(#startStone);
+    cursor: pointer;
+}
+
+#stoneDoor:hover {
+    filter: url(#shadowStone);
+}
+
+#boutique-door {
+    position: absolute;
+    top: 24%;
+    right: 0%;
+}
+
+#tranSvg4 {
+    transition: all ease 0.5s;
+}
+
+#boutDoor {
+    filter: url(#startBout);
+    cursor: pointer;
+}
+
+#boutDoor:hover {
+    filter: url(#shadowBout);
+}
+
+#arrow {
+    height: 5%;
+    width: 3%;
+    position: absolute;
+    top: 71%;
+    left: 50%;
+    background-color: #ffffff38;
+}
+
+/* Vernissage & Titles*/
+
+#vernisage-container {
+    position: absolute;
+    height: 10.2%;
+    width: 28.2%;
+    top: 37.4%;
+    left: 34%;
+}
+
+#vernisage-title {
+    font-size: clamp(5vw, 10vh, 15vw);
+    font-weight: 500;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: -2px;
+    text-shadow: 0 5px 5px #00000078;
+}
+
+#vernisage-hidden {
+    display: none;
+}
+
+/* paintings */
+#painting-container {
+    position: absolute;
+    height: 40%;
+    width: 87%;
+    max-width: 87%;
+    top: 38%;
+    left: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.both {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.painting {
+    width: auto;
+    height: 75%;
+}
+
+.note-general {
+    height: 12%;
+    width: auto;
+}
+
+.shadow {
+    box-shadow: 0px 5px 10px 2px #0000007d;
+}
+
+.shadow2 {
+    box-shadow: 0px 3px 4px 0px #0000007d;
+}

@@ -1,0 +1,92 @@
+html {
+    min-height: fit-content;
+    min-width: fit-content;
+}
+
+body {
+    margin: 0;
+    min-height: fit-content;
+    min-width: fit-content;
+}
+
+main {
+    position: relative;
+    min-height: fit-content;
+    min-width: fit-content;
+}
+
+.bck {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#bckUv {
+    z-index: 0;
+}
+
+#bckOn {
+    z-index: 1;
+}
+
+#bckOff {
+    z-index: 0;
+}
+
+#bckUvG {
+    z-index: 0;
+}
+
+#bckOnG {
+    z-index: 0;
+}
+
+#bckOffG {
+    z-index: 0;
+}
+
+#door {
+    position: absolute;
+    width: 18%;
+    height: 77.5%;
+    top: 10.8%;
+    left: 26.3%;
+    z-index: 2;
+}
+
+#lightSwitch {
+    position: absolute;
+    top: 40%;
+    left: 49.9%;
+    height: 12%;
+    width: 9%;
+}
+
+.lightSwitch-img {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    opacity: 1;
+    transition: opacity 2s ease;
+}
+
+#lightbutton1 {
+    position: absolute;
+    width: 13%;
+    height: 40%;
+    z-index: 2;
+    top: 29%;
+    left: 21%;
+    cursor: pointer;
+}
+
+#lightbutton2 {
+    position: absolute;
+    width: 13%;
+    height: 40%;
+    z-index: 2;
+    top: 31%;
+    left: 40%;
+    cursor: pointer;
+}

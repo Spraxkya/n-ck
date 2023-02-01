@@ -1,0 +1,477 @@
+body { 
+    margin: 0;
+    overflow-x:hidden;
+} 
+
+main {
+  height: fit-content;
+  width: fit-content;
+  overflow-x: hidden;
+}
+
+.hidden-values {
+  display: none !important;
+}
+
+h1 {
+    font-size: 7em;
+    text-align: center;
+    margin: 0;
+    color:bisque ;
+    font-family: 'Aleo', serif;
+}
+
+h2 {
+  font-size: 2em;
+  font-family: 'Aleo', serif;
+  color: whitesmoke;
+  margin: 0%;
+}
+
+h3 {
+  font-size: 2em;
+    font-family: 'Aleo', serif;
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+p {
+  color: whitesmoke;
+}
+
+.see-more1, .see-more2, .see-more3 {
+  margin-inline: auto;
+  background-color: transparent;
+  border: none;
+  color: whitesmoke;
+  opacity: 1;
+}
+
+#big-container {
+  position: absolute;
+  display: flex;
+  background-repeat: no-repeat; 
+  background: url('../images/store/pexels-shonejai-1227511.jpg');
+  overflow: hidden;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  transition: transform ease 4s;
+}
+
+.button {
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+
+/* Products */
+#products {
+  height: 100%;
+  width: 100%;
+}
+
+.hide-img{
+  height: 215px;
+  width: auto;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.prod-img1 {
+  position: absolute;
+  height: 215px;
+  width: auto;
+  cursor: pointer;
+  z-index: 4;
+  transition: height 2s ease, left 2s ease;
+}
+.prod-img2 {
+  position: absolute;
+  height: 215px;
+  width: auto;
+  cursor: pointer;
+  z-index: 4;
+  transition: height 2s ease, left 2s ease;
+}
+
+.prod-img3 {
+  position: absolute;
+  height: 215px;
+  width: auto;
+  cursor: pointer;
+  z-index: 4;
+  transition: height 2s ease, left 2s ease;
+}
+
+#product1, #product2, #product3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.product1 {
+  top: 2%;
+  left: 2%;
+}
+
+.product2 {
+  top: 23%;
+  left: 32%;
+}
+
+.product3 {
+  top: 11%;
+  left: 65%;
+}
+
+#product1 {
+  width: 710px;
+  height: 700px;
+  transition: all 2s ease;
+}
+
+#product2 {
+  width: 710px;
+  height: 700px;
+  transition: all 2s ease;
+} 
+
+#product3 {
+  width: 710px;
+  height: 700px;
+  transition: all 2s ease;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  background-color: #000000b0;
+  border-radius: 50%;
+  transition: height 2s ease, width 2s ease, border-radius 2s ease, left 2s ease;
+}
+
+.product-info1,.product-info2, .product-info3 {
+  z-index: -5;
+  opacity: 0;
+}
+
+.stats {
+  width: 50%;
+  height: fit-content;
+  margin-inline: 29%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.type {
+  width: 50%;
+}
+
+.type h4 {
+  font-size: 1em;
+  color: whitesmoke;
+  margin: 0.5%;
+}
+
+.type span {
+  font-size: 1.9em;
+  color: whitesmoke;
+}
+
+.skills {
+  width: 50%;
+  text-align: center;
+}
+
+.skills h4 {
+  font-size: 1em;
+  color: whitesmoke;
+  margin: 0.5%;
+}
+
+.skills ul {
+  font-size: 0.9em;
+  color: whitesmoke;
+  margin: 0.5%;
+  padding: 0;
+
+}
+
+.skills li {
+  font-size: 0.9em;
+  color: whitesmoke;
+  margin: 0.5%;
+  display: table;
+  margin-left: 38%;
+}
+
+.stats-graph {
+  width: 70%;
+  text-align: start;
+  font-size: 0.9em;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  margin-inline: 8%;
+
+}
+
+.stats-graph span {
+  height: 0.9em;
+  display: flex;
+  width: 25%;
+  justify-content: flex-end;
+}
+
+.stats-div {
+  width: 100%;
+  height: 1.2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats-bar1 {
+  width: 70%;
+  height: 0.9em;
+  border: solid 1px white;
+}
+
+.stats-bar2 {
+  width: 70%;
+  height: 0.9em;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(0,0,0,0) 24%);
+  border: solid 1px white;
+}
+
+.stats-bar3 {
+  width: 70%;
+  height: 0.9em;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(0,0,0,0) 24%);
+  border: solid 1px white;
+}
+
+.scale-div {
+  display: flex;
+  justify-content: space-between;
+  width: 102%;
+}
+
+.scale-div div {
+  width: 23%;
+  height: 5px;
+}
+
+.scale-div p {
+  margin: 1%;
+}
+
+.info-mSektion {
+  display: flex;
+  width: 90%;
+  margin-inline: auto;
+  justify-content: space-between;
+  height: 35%;
+}
+
+.first-mSektion {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+}
+
+.first-mSektion h3{
+  margin-top: 0;
+}
+
+.gallery-hide1, .gallery-hide2, .gallery-hide3 {
+  opacity: 1;
+  transition: opacity ease 2s;
+}
+
+.left-arrow1, .right-arrow1 {
+  position: absolute;
+  opacity: 0;
+  height: 20px;
+  width: 40px;
+  background-color: aqua;
+  transition: opacity ease 2s;
+}
+
+.left-arrow2, .right-arrow2 {
+  position: absolute;
+  opacity: 0;
+  height: 20px;
+  width: 40px;
+  background-color: aqua;
+  transition: opacity ease 2s;
+}
+
+.left-arrow3, .right-arrow3 {
+  position: absolute;
+  opacity: 0;
+  height: 20px;
+  width: 40px;
+  background-color: aqua;
+  transition: opacity ease 2s;
+}
+
+.left-arrow1,.left-arrow2,.left-arrow3 {
+  top: 50%;
+  left: 10%;
+}
+
+.right-arrow1, .right-arrow2, .right-arrow3 {
+  top: 50%;
+  right: 10%;
+}
+
+.exitGallery1, .exitGallery2, .exitGallery3 {
+  position: absolute;
+  bottom: 55px;
+  background-color: aqua;
+  margin-left: 25%;
+  width: 50%;
+  height: 40px;
+  opacity: 0;
+  transition: opacity ease 2s;
+  display: none;
+}
+
+.exitGallery1 h2, .exitGallery2 h2, .exitGallery3 h2 {
+  text-align: center;
+}
+
+.second-mSektion {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2%;
+  margin-left: 6%;
+}
+
+.third-mSektion {
+  width: 33%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+}
+
+.third-mSektion h4 {
+  font-size: 1.4em;
+  color: whitesmoke;
+  margin: 1%;
+  margin-left: 0;
+}
+
+.third-mSektion span {
+  font-size: 1.1em;
+  color: whitesmoke;
+}
+
+.cart-btn {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    padding: 15px 35px;
+    border-radius: unset;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    user-select: none;
+    overflow: unset;
+    text-transform: none;
+    font-weight: 500;
+    margin: 0;
+    border: solid 1px;
+    font-family: kwikk3,"Open Sans",sans-serif;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+    text-align: left;
+    border: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.button-info {
+  z-index: 5;
+}
+
+.description1, .description2, .description3 {
+  width: 55%;
+  height: 20%;
+  margin-inline: auto;
+  transition: all 4s;
+}
+
+
+
+
+
+/* Cart */
+
+#cart-container {
+  position: absolute;
+  display: flex;
+  background-repeat: no-repeat; 
+  background: url('../images/store/cart.jpg');
+  overflow: hidden;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  transition: transform ease 4s;
+  z-index: -1;
+}
+
+#cart-content {
+  position: absolute;
+  top: 17.3%;
+  left: 22.0%;
+  height: 56%;
+  width: 55.5%;
+  background-color: beige;
+}
+
+/*
+
+$prod3Id = 'prod_LNvRFl8hrSqmWQ';
+$sql = "SELECT * FROM products WHERE id=?";
+$stmt = $conn->prepare($sql); 
+$stmt->bind_param("i", $prod1Id);
+$stmt->execute();
+$result = $stmt->get_result();
+while ($row = $result->fetch_assoc()) {
+    $prod3name = $row['product_name'];
+    return $prod3name;
+};
+$stmt -> close();
+
+$prod2Id = 'prod_LNvRJoinmUXjsc';
+$sql = "SELECT * FROM products WHERE id=?";
+$stmt = $conn->prepare($sql); 
+$stmt->bind_param("i", $prod1Id);
+$stmt->execute();
+$result = $stmt->get_result();
+while ($row = $result->fetch_assoc()) {
+    $prod2name = $row['product_name'];
+    return $prod2name;
+};
+$stmt -> close();
