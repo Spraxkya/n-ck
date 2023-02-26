@@ -21,6 +21,11 @@ var lightSwitchOffOff = document.getElementById('lightSwitch-offOff');
 
 var bulletin = document.getElementById('bulletin-board');
 
+var poster = document.getElementsByClassName("poster");
+var posterLight = document.getElementsByClassName("posterLight");
+var posterDark = document.getElementsByClassName("posterDark");
+var posterUV = document.getElementsByClassName("posterUV");
+
 function leftButton() {
 
     switch (sessionStorage.getItem('mode')) {
@@ -100,6 +105,7 @@ function moodi() {
             lightSwitchOffOn.style.zIndex = '0';
             lightSwitchOnOn.style.zIndex = '0';
             lightSwitchOffOff.style.zIndex = '2';
+            
             bckOn.style.zIndex = '0';
             bckOff.style.zIndex = '1';
             bckUv.style.zIndex = '0';
@@ -109,12 +115,15 @@ function moodi() {
             document.querySelectorAll('.form-control').forEach(el => {
                 el.style.backgroundColor = "rgb(145 145 145 / 40%)";
             });
-            skyltUv.style.zIndex = '0';
-            skyltOff.style.zIndex = '2';
-            skyltOn.style.zIndex = '0';
-            onForm.style.display = 'none';
-            uvForm.style.display = 'none';
-
+            for (var i = 0; i < posterLight.length; i++) {
+                posterLight[i].style.zIndex = "0";
+            }
+            for (var i = 0; i < posterDark.length; i++) {
+                posterDark[i].style.zIndex = "2";
+            }
+            for (var i = 0; i < posterUV.length; i++) {
+                posterUV[i].style.zIndex = "0";
+            }
             break;
         case 'onOff':
             lightSwitchOffOff.style.zIndex = '0';
@@ -131,12 +140,15 @@ function moodi() {
                 el.style.backgroundColor = "rgba(255, 255, 255, 0.398)";
                 el.style.color = "black";
             });
-            skyltUv.style.zIndex = '0';
-            skyltOff.style.zIndex = '0';
-            skyltOn.style.zIndex = '2';
-            onForm.style.display = 'flex';
-            uvForm.style.display = 'none';
-
+            for (var i = 0; i < posterLight.length; i++) {
+                posterLight[i].style.zIndex = "2";
+            }
+            for (var i = 0; i < posterDark.length; i++) {
+                posterDark[i].style.zIndex = "0";
+            }
+            for (var i = 0; i < posterUV.length; i++) {
+                posterUV[i].style.zIndex = "0";
+            }
             break;
         case 'offOn':
             lightSwitchOnOff.style.zIndex = '0';
@@ -153,12 +165,15 @@ function moodi() {
                 el.style.backgroundColor = "rgba(255, 255, 255, 0.398)";
                 el.style.color = "black";
             });
-            skyltUv.style.zIndex = '0';
-            skyltOff.style.zIndex = '0';
-            skyltOn.style.zIndex = '2';
-            onForm.style.display = 'flex';
-            uvForm.style.display = 'none';
-
+            for (var i = 0; i < posterLight.length; i++) {
+                posterLight[i].style.zIndex = "2";
+            }
+            for (var i = 0; i < posterDark.length; i++) {
+                posterDark[i].style.zIndex = "0";
+            }
+            for (var i = 0; i < posterUV.length; i++) {
+                posterUV[i].style.zIndex = "0";
+            }
             break;
         case 'onOn':
             lightSwitchOnOff.style.zIndex = '0';
@@ -175,12 +190,15 @@ function moodi() {
                 el.style.backgroundColor = "rgba(255, 255, 255, 0.398)";
                 el.style.color = "#95d3fa";
             });
-            skyltUv.style.zIndex = '2';
-            skyltOff.style.zIndex = '0';
-            skyltOn.style.zIndex = '0';
-            onForm.style.display = 'none';
-            uvForm.style.display = 'flex';
-
+            for (var i = 0; i < posterLight.length; i++) {
+                posterLight[i].style.zIndex = "0";
+            }
+            for (var i = 0; i < posterDark.length; i++) {
+                posterDark[i].style.zIndex = "0";
+            }
+            for (var i = 0; i < posterUV.length; i++) {
+                posterUV[i].style.zIndex = "2";
+            }
             break;
     }
         
@@ -190,100 +208,175 @@ function enter() {
 
     switch(sessionStorage.getItem('mode')) {
         case 'offOff':
-            bckOffG.src = bckOffG.src;
-            bckOff.style.zIndex = '0';
-            bckOffG.style.zIndex = '1';
-            document.querySelectorAll('.lightSwitch-img').forEach(el => {
-                el.style.opacity = "0";
-                el.style.transition = "opacity 2s";
+            bckOffG.style.zIndex = '2';
+            bckOffG.play();
+            bckOffG.addEventListener('timeupdate', () => {
+                if (bckOffG.currentTime >= 1) {
+                    lightSwitch.style.opacity = "0";
+                    lightSwitch.style.transition = "opacity 1s";
+                    bulletin.style.opacity = "0";
+                    bulletin.style.transition = "opacity 1s";
+                    console.log('Event happened 1s into the video!');
+                    bckOffG.removeEventListener('timeupdate', arguments.callee); // stop listening to the event
+                }
+            });
+            bckOffG.addEventListener('ended', function() {
+                window.location.assign("./tpl/hall.php"); 
+                console.log('The video has finished playing');
             });
         break;
         case 'onOff':
-            bckOnG.src = bckOnG.src;
-            bckOn.style.zIndex = '0';
-            bckOnG.style.zIndex = '1';
-            document.querySelectorAll('.lightSwitch-img').forEach(el => {
-                el.style.opacity = "0";
-                el.style.transition = "opacity 2s";
+            bckOnG.style.zIndex = '2';
+            bckOnG.play();
+            bckOnG.addEventListener('timeupdate', () => {
+                if (bckOnG.currentTime >= 1) {
+                    lightSwitch.style.opacity = "0";
+                    lightSwitch.style.transition = "opacity 1s";
+                    bulletin.style.opacity = "0";
+                    bulletin.style.transition = "opacity 1s";
+                    console.log('Event happened 1s into the video!');
+                    bckOnG.removeEventListener('timeupdate', arguments.callee); // stop listening to the event
+                }
+            });
+            bckOnG.addEventListener('ended', function() {
+                window.location.assign("./tpl/hall.php"); 
+                console.log('The video has finished playing');
             });
         break;
         case 'offOn':
-            bckOnG.src = bckOnG.src;
-            bckOn.style.zIndex = '0';
-            bckOnG.style.zIndex = '1';
-            document.querySelectorAll('.lightSwitch-img').forEach(el => {
-                el.style.opacity = "0";
-                el.style.transition = "opacity 2s";
+            bckOnG.style.zIndex = '2';
+            bckOnG.play();
+            bckOnG.addEventListener('timeupdate', () => {
+                if (bckOnG.currentTime >= 1) {
+                    lightSwitch.style.opacity = "0";
+                    lightSwitch.style.transition = "opacity 1s";
+                    bulletin.style.opacity = "0";
+                    bulletin.style.transition = "opacity 1s";
+                    console.log('Event happened 1s into the video!');
+                    bckOnG.removeEventListener('timeupdate', arguments.callee); // stop listening to the event
+                }
+            });
+            bckOnG.addEventListener('ended', function() {
+                window.location.assign("./tpl/hall.php"); 
+                console.log('The video has finished playing');
             });
         break;
         case 'onOn':
-            bckUvG.src = bckUvG.src;
-            bckUv.style.zIndex = '0';
-            bckUvG.style.zIndex = '1';
-            document.querySelectorAll('.lightSwitch-img').forEach(el => {
-                el.style.opacity = "0";
-                el.style.transition = "opacity 2s";
+            bckUvG.style.zIndex = '2';
+            bckUvG.play();
+            bckUvG.addEventListener('timeupdate', () => {
+                if (bckUvG.currentTime >= 1) {
+                    lightSwitch.style.opacity = "0";
+                    lightSwitch.style.transition = "opacity 1s";
+                    bulletin.style.opacity = "0";
+                    bulletin.style.transition = "opacity 1s";
+                    console.log('Event happened 1s into the video!');
+                    bckUvG.removeEventListener('timeupdate', arguments.callee); // stop listening to the event
+                }
+            });
+            bckUvG.addEventListener('ended', function() {
+                window.location.assign("./tpl/hall.php"); 
+                console.log('The video has finished playing');
             });
         break;
     }
-
-    setTimeout(() => { 
-        window.location.assign("./tpl/hall.php"); 
-    }, 2000);
 }
 
 function skal() {
 
-    var elementHeight = window.innerHeight;
-    var elementWidth = window.innerWidth;
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+        
+        var mobileHeight = document.documentElement.clientHeight || document.body.clientHeight;
+        var mobiletWidth = document.documentElement.clientWidth || document.body.clientWidth;
 
-    var ratioHard = elementHeight/elementWidth;
+        var ratioHardM = mobileHeight/mobiletWidth;
 
-    var ratio = Math.round(ratioHard * 100) / 100;
+        var ratioM = Math.round(ratioHardM * 100) / 100;
 
-    console.log(ratio);
+        console.log(ratioM);
 
-    switch(true) {
-        case 0.49 > ratio :
+        document.body.style.overflow = 'scroll';
+        
+        switch(true) {
+            case 0.49 > ratioM :
+    
+                document.querySelector("html").removeEventListener("wheel", function(event) {
+                    this.scrollLeft += event.deltaY;
+                });
+                document.querySelector("html").addEventListener("wheel", function(event) {
+                    this.scrollTop += event.deltaY;
+                });
+    
+                console.log('under ratio');
+                cContainer.style.height = mobiletWidth * 937/1920 + 'px';
+                cContainer.style.width = mobiletWidth + 'px';
+    
+            break;
+    
+            case ratioM >= 0.49 :
+    
+                document.querySelector("html").removeEventListener("wheel", function(event) {
+                    this.scrollTop += event.deltaY;
+                });
+                document.querySelector("html").addEventListener("wheel", function(event) {
+                    this.scrollLeft += event.deltaY;
+                });
+    
+                console.log('över ratio');
+                cContainer.style.height = mobileHeight + 'px';
+                cContainer.style.width = mobileHeight * 1920/937 + 'px';
+    
+            break;
+        }
 
-            document.querySelector("html").removeEventListener("wheel", function(event) {
-                this.scrollLeft += event.deltaY;
-            });
-            document.querySelector("html").addEventListener("wheel", function(event) {
-                this.scrollTop += event.deltaY;
-            });
+    } else {
 
-            console.log('under ratio');
-            cContainer.style.height = elementWidth * 937/1920 + 'px';
-            cContainer.style.width = elementWidth + 'px';
+        var elementHeight = window.innerHeight;
+        var elementWidth = window.innerWidth;
+    
+        var ratioHard = elementHeight/elementWidth;
+    
+        var ratio = Math.round(ratioHard * 100) / 100;
+    
+        console.log(ratio);
 
-        break;
+        document.body.style.overflow = 'hidden';
 
-        case ratio >= 0.49 :
-
-            document.querySelector("html").removeEventListener("wheel", function(event) {
-                this.scrollTop += event.deltaY;
-            });
-            document.querySelector("html").addEventListener("wheel", function(event) {
-                this.scrollLeft += event.deltaY;
-            });
-
-            console.log('över ratio');
-            cContainer.style.height = elementHeight + 'px';
-            cContainer.style.width = elementHeight * 1920/937 + 'px';
-
-        break;
+        switch(true) {
+            case 0.49 > ratio :
+    
+                document.querySelector("html").removeEventListener("wheel", function(event) {
+                    this.scrollLeft += event.deltaY;
+                });
+                document.querySelector("html").addEventListener("wheel", function(event) {
+                    this.scrollTop += event.deltaY;
+                });
+    
+                console.log('under ratio');
+                cContainer.style.height = elementWidth * 937/1920 + 'px';
+                cContainer.style.width = elementWidth + 'px';
+    
+            break;
+    
+            case ratio >= 0.49 :
+    
+                document.querySelector("html").removeEventListener("wheel", function(event) {
+                    this.scrollTop += event.deltaY;
+                });
+                document.querySelector("html").addEventListener("wheel", function(event) {
+                    this.scrollLeft += event.deltaY;
+                });
+    
+                console.log('över ratio');
+                cContainer.style.height = elementHeight + 'px';
+                cContainer.style.width = elementHeight * 1920/937 + 'px';
+    
+            break;
+        }
     }
 }
 
-if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-    document.body.zoom = '1';
-    document.body.style.overflow = 'scroll';
-    window.addEventListener("orientationchange", skal);
-} else {
-    document.body.style.overflow = 'hidden';
-    window.onresize = skal;
-}
 
+window.onresize = skal;
 
 window.onload = skal();

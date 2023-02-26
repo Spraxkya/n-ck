@@ -3,24 +3,26 @@
 <head>
     <title>Näcks Hall</title>
     <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
     <link rel="icon" href="https://xn--nck-qla.com/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="./styles/huset/hall.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/universal.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" srel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles/huset/hall.css?19" />
+    <link rel="stylesheet" type="text/css" href="./styles/universal.css?19" />
 </head>
 <body>
+    <div id="loading-screenHuset">
+        <img id="loadLogo" src="./images/nack_original.svg" alt="">
+        <span id="randomTip">Look for the clickable objects!</span>
+    </div>
     <main id="cContainer">
+        <div id="chatContainer">
+            <p id="conversation"></p>
+        </div>
         <img id="bckI"  class="bck" src="./images/huset/hall/hall.jpg" alt="">
-        <img class="bck" src="./images/huset/hall/man.png" alt="">
+        <img id="tillbaka" onclick="window.location.assign('../');" src="./images/huset/pil_rod.png" alt="">
         <svg id="doNotEnter-door" class="big-doorway" viewBox="0 0 229 497" width="11.927083333333333333333333333333%" height="53.041622198505869797225186766275%" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs>
                 <filter id="shadowDoNotEnter">
-                    <feOffset dx="10 -10" dy="10 -10"/>
+                    
                     <feGaussianBlur stdDeviation="20" result="offset-blur" /> <!-- Shadow Blur -->
                     <feComposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse" />
                     <!-- Invert the drop shadow to create an inner shadow -->
@@ -35,7 +37,7 @@
                     <!-- Put shadow over original object -->
                 </filter>
                 <filter id="startDo">
-                    <feOffset dx="10 -10" dy="10 -10"/> <!-- Shadow Offset -->
+                     <!-- Shadow Offset -->
                     <feComposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse" />
                     <!-- Invert the drop shadow to create an inner shadow -->
                     <feFlood flood-color="#ff0000" flood-opacity="1" result="color" /> <!-- Color & Opacity -->
@@ -58,11 +60,11 @@
         <svg id="profile-door" class="big-doorway" version="1.0" xmlns="http://www.w3.org/2000/svg" width="8.7%" height="37%" viewBox="0 0 167.000000 351.000000" preserveAspectRatio="none">
             <defs>
                     <filter id="shadowProfile">
-                        <feOffset dx="10 -10" dy="10 -10"/>
+                        
                         <feGaussianBlur stdDeviation="110" result="offset-blur" /> <!-- Shadow Blur -->
                         <feComposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse" />
                         <!-- Invert the drop shadow to create an inner shadow -->
-                        <feFlood id="tranSvg3" flood-color="#afaa7e" flood-opacity="0" result="color" /> <!-- Color & Opacity -->
+                        <feFlood id="tranSvg3" flood-color="#d64b4b" flood-opacity="0" result="color" /> <!-- Color & Opacity -->
                         <feComposite operator="in" in="color" in2="inverse" result="shadow" />
                         <!-- Clip color inside shadow -->
                         <feComponentTransfer in="shadow" result="shadow">
@@ -73,7 +75,7 @@
                         <!-- Put shadow over original object -->
                     </filter>
                     <filter id="startProfile">
-                        <feOffset dx="10 -10" dy="10 -10"/> <!-- Shadow Offset -->
+                         <!-- Shadow Offset -->
                         <feComposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse" />
                         <!-- Invert the drop shadow to create an inner shadow -->
                         <feFlood flood-color="#ff0000" flood-opacity="1" result="color" /> <!-- Color & Opacity -->
@@ -97,7 +99,11 @@
         <div id="vernisage-container">
             <h1 id="vernisage-title"></h1>
         </div>
-        <a id="arrow" href="./paintings.php"></a>
+        <a id="arrow1" class="flicker" href="./paintings.php"></a>
+        <a id="arrow2" class="flicker" href="./paintings.php"></a>
+        <a id="arrow3" class="flicker" href="./paintings.php"></a>
+        <a id="arrow4" class="flicker" href="./paintings.php"></a>
+        <a id="arrow5" class="flicker" href="./paintings.php"></a>
         <svg id="stone-door" class="big-doorway" viewBox="0 0 160.98 355" width="8.3854%" height="37.88687%" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs>
                 <filter id="shadowStone">
@@ -115,7 +121,7 @@
                     <!-- Put shadow over original object -->
                 </filter>
                 <filter id="startStone">
-                    <feOffset dx="10 -10" dy="10 -10"/> <!-- Shadow Offset -->
+                     <!-- Shadow Offset -->
                     <feComposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse" />
                     <!-- Invert the drop shadow to create an inner shadow -->
                     <feFlood flood-color="#ff0000" flood-opacity="1" result="color" /> <!-- Color & Opacity -->
@@ -138,11 +144,11 @@
         <svg id="boutique-door" class="big-doorway" version="1.0" xmlns="http://www.w3.org/2000/svg" width="8.3%" height="59%" viewBox="0 0 180.000000 537.000000" preserveAspectRatio="none">
             <defs>
                 <filter id="shadowBout">
-                    <feOffset dx="10 -10" dy="10 -10"/>
+                    
                     <feGaussianBlur stdDeviation="110" result="offset-blur" /> <!-- Shadow Blur -->
                     <feComposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse" />
                     <!-- Invert the drop shadow to create an inner shadow -->
-                    <feFlood id="tranSvg4" flood-color="#afaa7e" flood-opacity="0" result="color" /> <!-- Color & Opacity -->
+                    <feFlood id="tranSvg4" flood-color="#d64b4b" flood-opacity="0" result="color" /> <!-- Color & Opacity -->
                     <feComposite operator="in" in="color" in2="inverse" result="shadow" />
                     <!-- Clip color inside shadow -->
                     <feComponentTransfer in="shadow" result="shadow">
@@ -153,7 +159,7 @@
                     <!-- Put shadow over original object -->
                 </filter>
                 <filter id="startBout">
-                    <feOffset dx="10 -10" dy="10 -10"/> <!-- Shadow Offset -->
+                     <!-- Shadow Offset -->
                     <feComposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse" />
                     <!-- Invert the drop shadow to create an inner shadow -->
                     <feFlood flood-color="#ff0000" flood-opacity="1" result="color" /> <!-- Color & Opacity -->
@@ -176,7 +182,7 @@
             </g>
         </svg>
     </main>
-    <script type="text/javascript" src="./scripts/huset/hall.js"></script>
+    <script type="text/javascript" src="./scripts/universal.js" async></script>
+    <script type="text/javascript" src="./scripts/huset/hall.js" async></script>
 </body>
-
 </html>

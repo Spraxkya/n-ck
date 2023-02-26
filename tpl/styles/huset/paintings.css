@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 html {
     min-height: fit-content;
     min-width: fit-content;
@@ -21,6 +23,12 @@ h2 {
     text-shadow: 3px 0 #ffffff, -3px 0 #ffffff, 0 3px #ffffff, 0 -3px #ffffff, 2px 2px #ffffff, -2px -2px #ffffff, 2px -2px #ffffff, -2px 2px #ffffff;
 }
 
+.h2desc {
+
+font-size: 70px;
+
+}
+
 h3 {
     position: absolute;
     color: white;
@@ -41,11 +49,27 @@ p {
     text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }
 
+.descP {
+    width: 80%;
+}
+
+.paintP {
+    width: 45%;
+}
+
 .bck {
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+.whiteB {
+    position:fixed;
+    width:100%; 
+    height:100%; 
+    background-color:white; 
+    z-index:-1;
 }
 
 /* navigation */
@@ -63,18 +87,17 @@ p {
 
 #vernisage-container {
     position: absolute;
-    height: 30%;
+    height: 25%;
     width: 65%;
     top: 15%;
-    left: 10%;
+    left: 10.5%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
 }
 
 #vernisage-title {
     margin: 0;
-    font-size: 2em;
+    font-size: clamp(11vw, 22vh, 33vw);
     font-weight: 500;
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 0 5px 5px rgb(0 0 0 / 46%);
@@ -98,6 +121,7 @@ p {
     width: min-content;
     height: 100%;
     align-items: center;
+    -webkit-align-items: center;
     justify-content: space-around;
 }
 
@@ -128,18 +152,20 @@ p {
     height: 100%;
     background-image: url(../../images/huset/hall/lit.webp);
     background-size: cover;
-    position: absolute;
+    background-position: bottom;
+    position: fixed;
     opacity: 0.6;
-    z-index: -1;
+    z-index: -2;
 }
 
 #dim1 {
     position: fixed;
-    height: 100vh;
-    width: 100vw;
-    z-index: -1;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
     display: flex;
     align-items: center;
+    -webkit-align-items: center;
     justify-content: center;
 }
 
@@ -154,19 +180,18 @@ p {
     z-index: 1;
     flex-direction: column;
     align-items: center;
-}
-
-.descP {
-    width: 80%;
+    -webkit-align-items: center;
+    justify-content: space-evenly;
 }
 
 #dim2 {
     position: fixed;
-    height: 100vh;
-    width: 100vw;
-    z-index: -1;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
     display: flex;
     align-items: center;
+    -webkit-align-items: center;
     justify-content: center;
 }
 
@@ -182,15 +207,42 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    -webkit-align-items: center;
 }
 
-.paintP {
-    width: 45%;
+.paintingInfoL {
+    display: none;
 }
 
 .imgZ {
     width: auto;
+    height: 100%;
+}
+
+.landscape {
     height: 45%;
+}
+
+.landscapeK {
+    display: none;
+}
+
+.portraitK {
+    display: block;
+}
+
+/*kwikk */
+
+.comet__btn {
+
+    border: solid white !important;
+
+}
+
+#kwikk__cart-btn {
+
+    border: solid white !important;
+    border-radius: 50px !important;
 }
 
 @media screen and (max-width: 1040px) {
@@ -201,16 +253,243 @@ p {
         width: fit-content;
     }
 
-    .paintingInfo {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+    .paintP {
+        width: 60%;
+    }
+
+}
+
+@media (pointer: coarse) and (hover: none) {
+
+    #comet__modal-wrap {
+        position: fixed !important;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 100000;
         align-items: center;
+        -webkit-align-items: center;
+        justify-content: center;
+        opacity: 1;
+    }
+
+    #comet__modal-wrap .comet__modal-closebtn-wrap {
+        width: 390px !important;
+        padding: 0;
+        display: block;
+        max-width: 97% !important;
+        min-width: 300px;
+        z-index: 200000 !important;
+        transition: .5s all;
+        overflow: visible;
+        margin: 5px auto !important;
+        position: fixed !important;
+        text-align: right;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+    }
+
+    #comet__modal-wrap .comet__modal-content {
+        position: relative;
+        z-index: 200;
+        margin: 2em auto;
+        width: 400px;
+        width: 320px;
+        padding: 2em;
+        display: block;
+        max-width: 90%;
+        min-width: 300px;
+        height: 80vh;
+        overflow: scroll !important;
+        background: none;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 5% auto !important;
+        border-radius: 5px 5px 0 0;
+        transition: transform .5s;
+        transform: translateY(-1000px);
+        will-change: transform;
+    }
+
+    h3 {
+        position: absolute;
+        color: white;
+        font-size: 40px;
+        font-family: 'Permanent Marker', cursive;
+        right: 3%;
+        top: 0%;
+        margin: 0;
+        text-shadow: 3px 0 #000, -3px 0 #000, 0 3px #000, 0 -3px #000, 2px 2px #000, -2px -2px #000, 2px -2px #000, -2px 2px #000;
+        z-index: 5;
+        cursor: pointer;
     }
 
     .imgZ {
         width: auto;
-        height: 40%;
+        height: 28vh;
     }
 
-  }
+    .paintP {
+        width: 75vw;
+    }
+
+    p {
+        margin: 0;
+        font-family: 'Permanent Marker', cursive;
+        font-size: 14px;
+        color: #000000;
+        text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    }
+
+}
+
+@media (pointer: coarse) and (hover: none) and (orientation: landscape) {
+   
+    #comet__modal-wrap .comet__modal-content {
+        position: relative;
+        z-index: 200;
+        margin: 2em auto;
+        width: 400px;
+        width: 320px;
+        padding: 2em;
+        display: block;
+        max-width: 90%;
+        min-width: 300px;
+        height: 70vh;
+        overflow: scroll !important;
+        background: none;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 5% auto !important;
+        border-radius: 5px 5px 0 0;
+        transition: transform .5s;
+        transform: translateY(-1000px);
+        will-change: transform;
+    }
+
+    .h2paint {
+        font-size: 1.6em;      
+    }
+
+    #painting1, #painting2, #painting3, #painting4, #painting5 {
+        display: none;
+        z-index: 1;
+        height: 90vh;
+        width:100%;
+        justify-content: center;
+    }
+
+    .paintingInfo {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        -webkit-align-items: center;
+        height: 80vh;
+    }
+
+    .paintingInfoL {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        -webkit-align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .imgLa {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        -webkit-align-items: center;
+        justify-content: center;
+    }
+
+    .paintP {
+        width: 80%;
+    }
+
+    .imgZ {
+        width: auto;
+        height: 70%;
+    }
+
+    .landscape {
+        display: flex;
+        width: 50%;
+        height: 90%;
+        justify-content: space-around;
+        align-items: center;
+        -webkit-align-items: center;
+        flex-direction: column;
+    }
+
+    .portraitK {
+        display: none;
+    }
+
+    .landscapeK {
+        display: block;
+    }
+
+    .h2desc {
+        font-size: 2em;
+    }
+
+    .descP {
+        font-size: 16px;
+    }
+
+}
+
+@media (pointer: coarse) and (hover: none) and (orientation: portrait) {
+    #painting1, #painting2, #painting3, #painting4, #painting5 {
+        display: none;
+        z-index: 1;
+        height: 100%;
+        width: fit-content;
+        top: 0;
+        position: absolute;
+    }
+
+    .paintingInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        -webkit-align-items: center;
+    }
+
+    .paintingInfoL {
+        display: none;
+    }
+
+    .landscape {
+        display: flex;
+        width: 100vw;
+        justify-content: space-around;
+        align-items: center;
+        -webkit-align-items: center;
+    }
+
+    .landscapeK {
+        display: none;
+    }
+
+    .portraitK {
+        display: block;
+        margin-top: 10%;
+    }
+
+    #big-note {
+        position: absolute;
+        max-width: 75%;
+        z-index: -1;
+    }
+
+    .h2desc {
+        font-size: 1.4em;
+    }
+}

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 html {
     min-height: fit-content;
     min-width: fit-content;
@@ -22,13 +24,35 @@ main {
     object-fit: contain;
 }
 
+/* Chat */ 
+
+#chatContainer {
+    position: fixed;
+    bottom: 2%;
+    left: 2%;
+    width: 300px;
+    height: 100px;
+    background-color: #0c0c0c87;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    overflow-y: auto;
+}
+
+#conversation {
+    margin: 0 5%;
+    color: white;
+    font-size: 1.3em;
+    font-family: 'VT323', monospace;
+}
+
 /* navigation */
 #doNotEnter-door {
     position: absolute;
     top: 27%;
 }
 
-#tranSvg1 {
+#tranSvg1,#tranSvg2,#tranSvg3,#tranSvg4 {
     transition: all ease 0.5s;
 }
 
@@ -48,10 +72,6 @@ main {
     left: 16.9%;
 }
 
-#tranSvg3 {
-    transition: all ease 0.5s;
-}
-
 #profile {
     filter: url(#startProfile);
     cursor: pointer;
@@ -65,10 +85,6 @@ main {
     position: absolute;
     top: 35.5%;
     left: 78.97%;
-}
-
-#tranSvg2 {
-    transition: all ease 0.5s;
 }
 
 #stoneDoor {
@@ -86,10 +102,6 @@ main {
     right: 0%;
 }
 
-#tranSvg4 {
-    transition: all ease 0.5s;
-}
-
 #boutDoor {
     filter: url(#startBout);
     cursor: pointer;
@@ -99,14 +111,111 @@ main {
     filter: url(#shadowBout);
 }
 
-#arrow {
-    height: 5%;
-    width: 3%;
+#arrow1 {
     position: absolute;
-    top: 71%;
-    left: 50%;
-    background-color: #ffffff38;
+    height: 11.7%;
+    width: 7.4%;
+    top: 48%;
+    left: 35.85%;
+    background-color: #ffffff75;
+    border-top: 1px solid #ffffff75;
+    border-right: 1px solid #ffffff75;
+    border-bottom: 0;
+    border-left: 1px solid #ffffff75;
+    opacity: 0;
 }
+#arrow2 {
+    position: absolute;
+    height: 11.7%;
+    width: 7.4%;
+    top: 48%;
+    left: 44.8%;
+    background-color: #ffffff75;
+    border-top: 1px solid #ffffff75;
+    border-right: 1px solid #ffffff75;
+    border-bottom: 0;
+    border-left: 1px solid #ffffff75;
+    opacity: 0;
+}
+#arrow3 {
+    position: absolute;
+    height: 11.7%;
+    width: 4.3%;
+    top: 48%;
+    left: 53.75%;
+    background-color: #ffffff75;
+    border-top: 1px solid #ffffff75;
+    border-right: 1px solid #ffffff75;
+    border-bottom: 0;
+    border-left: 1px solid #ffffff75;
+    opacity: 0;
+}
+#arrow4 {
+    position: absolute;
+    height: 11.7%;
+    width: 4.3%;
+    top: 48%;
+    left: 59.6%;
+    background-color: #ffffff75;
+    border-top: 1px solid #ffffff75;
+    border-right: 1px solid #ffffff75;
+    border-bottom: 0;
+    border-left: 1px solid #ffffff75;
+    opacity: 0;
+}
+#arrow5 {
+    position: absolute;
+    height: 11.7%;
+    width: 5.6%;
+    top: 48%;
+    left: 65.42%;
+    background-color: #ffffff75;
+    border-top: 1px solid #ffffff75;
+    border-right: 1px solid #ffffff75;
+    border-bottom: 0;
+    border-left: 1px solid #ffffff75;
+    opacity: 0;
+}
+
+.flicker {
+    animation: flicker 15s infinite;
+  }
+  
+  @keyframes flicker {
+      0% {
+        opacity: 1;
+      }
+      10% {
+        opacity: 0;
+      }
+      20% {
+        opacity: 1;
+      }
+      30% {
+        opacity: 0;
+      }
+      40% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      60% {
+        opacity: 1;
+      }
+      70% {
+        opacity: 0;
+      }
+      80% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+  }
 
 /* Vernissage & Titles*/
 
@@ -114,8 +223,10 @@ main {
     position: absolute;
     height: 10.2%;
     width: 28.2%;
-    top: 37.4%;
-    left: 34%;
+    top: 38.4%;
+    left: 36%;
+    display: flex;
+    align-items: flex-end;
 }
 
 #vernisage-title {
@@ -168,4 +279,50 @@ main {
 
 .shadow2 {
     box-shadow: 0px 3px 4px 0px #0000007d;
+}
+
+@media (pointer: coarse) and (hover: none) {
+
+    #chatContainer {
+        display: none;
+        position: fixed;
+        bottom: 2%;
+        left: 2%;
+        width: 330px;
+        height: 100px;
+        background-color: #0c0c0c87;
+        z-index: 10;
+    }
+}
+
+@media screen and (max-height: 700px) {
+
+
+    #chatContainer {
+        position: fixed;
+        bottom: 2%;
+        left: 2%;
+        width: 270px;
+        height: 100px;
+        background-color: #0c0c0c87;
+        z-index: 10;
+    }
+
+
+}
+
+@media screen and (max-height: 450px) {
+
+
+    #chatContainer {
+        position: fixed;
+        bottom: 2%;
+        left: 2%;
+        width: 200px;
+        height: 100px;
+        background-color: #0c0c0c87;
+        z-index: 10;
+    }
+
+
 }
