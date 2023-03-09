@@ -23,7 +23,7 @@
             <defs>
                 <filter id="shadowDoNotEnter">
                     
-                    <feGaussianBlur stdDeviation="20" result="offset-blur" /> <!-- Shadow Blur -->
+                    <feGaussianBlur stdDeviation="20" result="offset-blur" /> <!-- Shadow Blur Yes-->
                     <feComposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse" />
                     <!-- Invert the drop shadow to create an inner shadow -->
                     <feFlood id="tranSvg1" flood-color="#d64b4b" flood-opacity="0" result="color" /> <!-- Color & Opacity -->
