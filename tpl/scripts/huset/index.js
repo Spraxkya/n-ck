@@ -10,6 +10,8 @@ var bckOnG = document.getElementById('bckOnG');
 var bckOffG = document.getElementById('bckOffG');
 var bckUvG = document.getElementById('bckUvG');
 
+var flicker = document.getElementsByClassName('flicker')[0];
+
 var lightSwitch = document.getElementById('lightSwitch');
 var leftSwitch = document.getElementById('lightbutton1');
 var rightSwitch = document.getElementById('lightbutton2');
@@ -216,6 +218,7 @@ function enter() {
                     lightSwitch.style.transition = "opacity 1s";
                     bulletin.style.opacity = "0";
                     bulletin.style.transition = "opacity 1s";
+                    flicker.style.display = "none";
                     console.log('Event happened 1s into the video!');
                     bckOffG.removeEventListener('timeupdate', arguments.callee); // stop listening to the event
                 }
@@ -234,6 +237,7 @@ function enter() {
                     lightSwitch.style.transition = "opacity 1s";
                     bulletin.style.opacity = "0";
                     bulletin.style.transition = "opacity 1s";
+                    flicker.style.display = "none";
                     console.log('Event happened 1s into the video!');
                     bckOnG.removeEventListener('timeupdate', arguments.callee); // stop listening to the event
                 }
@@ -252,6 +256,7 @@ function enter() {
                     lightSwitch.style.transition = "opacity 1s";
                     bulletin.style.opacity = "0";
                     bulletin.style.transition = "opacity 1s";
+                    flicker.style.display = "none";
                     console.log('Event happened 1s into the video!');
                     bckOnG.removeEventListener('timeupdate', arguments.callee); // stop listening to the event
                 }
@@ -270,6 +275,7 @@ function enter() {
                     lightSwitch.style.transition = "opacity 1s";
                     bulletin.style.opacity = "0";
                     bulletin.style.transition = "opacity 1s";
+                    flicker.style.display = "none";
                     console.log('Event happened 1s into the video!');
                     bckUvG.removeEventListener('timeupdate', arguments.callee); // stop listening to the event
                 }

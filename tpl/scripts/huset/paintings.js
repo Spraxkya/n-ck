@@ -187,7 +187,7 @@ function skal() {
                 console.log('under ratio');
                 cContainer.style.height = mobiletWidth * 937/1920 + 'px';
                 cContainer.style.width = mobiletWidth + 'px';
-    
+
             break;
     
             case ratioM >= 0.49 :
@@ -202,10 +202,8 @@ function skal() {
                 console.log('över ratio');
                 cContainer.style.height = mobileHeight + 'px';
                 cContainer.style.width = mobileHeight * 1920/937 + 'px';
-    
             break;
         }
-
     } else {
 
         function scaleHeadingAndParagraph() {

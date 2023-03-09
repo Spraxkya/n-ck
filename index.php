@@ -11,7 +11,7 @@
 <body>
     <div id="loading-screenHuset">
         <img id="loadLogo" src="./tpl/images/nack_original.svg" alt="">
-        <span id="randomTip">Try rotating to see more of the room!</span>
+        <span id="randomTip">If you're on mobile, try to rotate too see more!</span>
     </div>
     <main id="cContainer">   
         <img id="bckUv" class="bck" src="./tpl/images/huset/uv-lights-on.webp" alt="" loading="lazy"> 
@@ -26,7 +26,7 @@
         <video id="bckUvG" class="bck" playsinline="" muted="">
             <source src="./tpl/videos/door-uv.mp4" type="video/mp4">
         </video>
-        <div id="door" onclick="enter();"></div>
+        <div id="door" onclick="enter();" class="flicker"></div>
         <div style="z-index:2" id="lightSwitch">
             <img style="z-index:0" class="lightSwitch-img" id="lightSwitch-onOn" src="./tpl/images/huset/on-on.png" loading="lazy">
             <img style="z-index:0" class="lightSwitch-img" id="lightSwitch-offOn" src="./tpl/images/huset/off-on.png" loading="lazy">

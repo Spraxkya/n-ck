@@ -135,5 +135,6 @@
             </ul>
         </div>
     </main>
+    <a class="social" href="https://www.linkedin.com/company/nack-pa-natet/"><img class="social_logo" src="./tpl/images/linkedIn.png" alt=""></a>
 </body>
 </html>

@@ -240,6 +240,19 @@ span {
   animation: flicker 1s infinite;
 }
 
+.social {
+  position: fixed;
+  z-index: 3;
+  bottom: 2%;
+  left: 2%;
+  pointer-events: all !important;
+}
+
+.social_logo {
+  height: 100%;
+  width: auto;
+}
+
 @keyframes flicker {
     0% {
       opacity: 1;
@@ -359,6 +372,19 @@ a {
     cursor: pointer;
   }
 
+  .social {
+    position: fixed;
+    z-index: 3;
+    bottom: 1%;
+    left: 2%;
+    pointer-events: all !important;
+  }
+
+  .social_logo {
+    height: 100%;
+    width: auto;
+  }
+
 }
 
 @media (pointer: coarse) and (hover: none) and (orientation: landscape) {
@@ -381,6 +407,19 @@ a {
     transition: all 2s ease;
     -moz-transition: none;
     cursor: pointer;
+  }
+
+  .social {
+    position: fixed;
+    z-index: 3;
+    bottom: 1%;
+    left: 2%;
+    pointer-events: all !important;
+  }
+
+  .social_logo {
+    height: 100%;
+    width: auto;
   }
 
 }

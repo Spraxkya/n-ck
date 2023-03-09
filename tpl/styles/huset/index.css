@@ -54,7 +54,52 @@ main {
     left: 26.3%;
     z-index: 2;
     cursor: pointer;
+    background-color: #ffffff45;
+    border-top: 1px solid #ffffff45;
+    border-right: 1px solid #ffffff45;
+    border-bottom: 0;
+    border-left: 1px solid #ffffff45;
 }
+
+.flicker {
+    animation: flicker 15s infinite;
+  }
+  
+  @keyframes flicker {
+      0% {
+        opacity: 1;
+      }
+      10% {
+        opacity: 0;
+      }
+      20% {
+        opacity: 1;
+      }
+      30% {
+        opacity: 0;
+      }
+      40% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      60% {
+        opacity: 1;
+      }
+      70% {
+        opacity: 0;
+      }
+      80% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+  }
 
 #lightSwitch {
     position: absolute;
