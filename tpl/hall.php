@@ -5,20 +5,20 @@
     <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
     <link rel="icon" href="https://xn--nck-qla.com/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="./styles/huset/hall.css?19" />
-    <link rel="stylesheet" type="text/css" href="./styles/universal.css?19" />
+    <link rel="stylesheet" type="text/css" href="../tpl/styles/huset/hall.css?19" />
+    <link rel="stylesheet" type="text/css" href="../tpl/styles/universal.css?19" />
 </head>
 <body>
     <div id="loading-screenHuset">
-        <img id="loadLogo" src="./images/nack_original.svg" alt="">
+        <img id="loadLogo" src="../tpl/images/nack_original.svg" alt="">
         <span id="randomTip">Look for the clickable objects!</span>
     </div>
     <main id="cContainer">
         <div id="chatContainer">
             <p id="conversation"></p>
         </div>
-        <img id="bckI"  class="bck" src="./images/huset/hall/hall.jpg" alt="">
-        <img id="tillbaka" onclick="window.location.assign('../');" src="./images/huset/pil_rod.png" alt="">
+        <img id="bckI"  class="bck" src="../tpl/images/huset/hall/hall.jpg" alt="">
+        <img id="tillbaka" onclick="window.location.assign('../');" src="../tpl/images/huset/pil_rod.png" alt="">
         <svg id="doNotEnter-door" class="big-doorway" viewBox="0 0 229 497" width="11.927083333333333333333333333333%" height="53.041622198505869797225186766275%" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs>
                 <filter id="shadowDoNotEnter">
@@ -99,11 +99,11 @@
         <div id="vernisage-container">
             <h1 id="vernisage-title"></h1>
         </div>
-        <a id="arrow1" class="flicker" href="./paintings.php"></a>
-        <a id="arrow2" class="flicker" href="./paintings.php"></a>
-        <a id="arrow3" class="flicker" href="./paintings.php"></a>
-        <a id="arrow4" class="flicker" href="./paintings.php"></a>
-        <a id="arrow5" class="flicker" href="./paintings.php"></a>
+        <a id="arrow1" class="flicker" href="./paintings"></a>
+        <a id="arrow2" class="flicker" href="./paintings"></a>
+        <a id="arrow3" class="flicker" href="./paintings"></a>
+        <a id="arrow4" class="flicker" href="./paintings"></a>
+        <a id="arrow5" class="flicker" href="./paintings"></a>
         <svg id="stone-door" class="big-doorway" viewBox="0 0 160.98 355" width="8.3854%" height="37.88687%" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs>
                 <filter id="shadowStone">
@@ -182,7 +182,7 @@
             </g>
         </svg>
     </main>
-    <script type="text/javascript" src="./scripts/universal.js" async></script>
-    <script type="text/javascript" src="./scripts/huset/hall.js" async></script>
+    <script type="text/javascript" src="../tpl/scripts/universal.js" async></script>
+    <script type="text/javascript" src="../tpl/scripts/huset/hall.js" async></script>
 </body>
 </html>

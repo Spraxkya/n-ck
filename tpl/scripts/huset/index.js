@@ -224,7 +224,7 @@ function enter() {
                 }
             });
             bckOffG.addEventListener('ended', function() {
-                window.location.assign("./tpl/hall.php"); 
+                window.location.assign("./hall"); 
                 console.log('The video has finished playing');
             });
         break;
@@ -243,7 +243,7 @@ function enter() {
                 }
             });
             bckOnG.addEventListener('ended', function() {
-                window.location.assign("./tpl/hall.php"); 
+                window.location.assign("./hall"); 
                 console.log('The video has finished playing');
             });
         break;
@@ -262,7 +262,7 @@ function enter() {
                 }
             });
             bckOnG.addEventListener('ended', function() {
-                window.location.assign("./tpl/hall.php"); 
+                window.location.assign("./hall"); 
                 console.log('The video has finished playing');
             });
         break;
@@ -281,7 +281,7 @@ function enter() {
                 }
             });
             bckUvG.addEventListener('ended', function() {
-                window.location.assign("./tpl/hall.php"); 
+                window.location.assign("./hall"); 
                 console.log('The video has finished playing');
             });
         break;
